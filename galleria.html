@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script src="js/jquery.js"></script>
+        <script src="galleria/galleria-1.5.7.min.js"></script>
+        <style>
+        .galleria{ max-width: 700px; height: 400px; background: #000 }
+        </style>
+    </head>
+    <body>
+        <div class="galleria">
+            <img src="img/404-bg.jpg">
+            <img src="img/post-bg-man.jpg">
+            <img src="img/post-bg-start.jpg">
+        </div>
+        <script>
+	(function() {
+            Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+            Galleria.run('.galleria');
+        }());
+        </script>
+    </body>
+</html>
