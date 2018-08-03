@@ -18,7 +18,24 @@ header-img: "img/post-bg-rwd.jpg"
     <p>这是我的利用 <a href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a> 搭建的个人博客。我在GitHub主页<a href="https://github.com/Escutche0n">👉GitHub·Escutche0n</a>。如果有什么问题，欢迎提出探讨~</p>
 
     <p>哪怕现在尚在起点，但我希望在这个小小的平台上，能记录下我对于编程的理解，或者是对设计的思考，以及生活中那些有趣的点点滴滴。</p>
-
+    
+    <script>
+        var deadline = new Date("Sep 26, 2018 15:37:25").getTime();
+        var x = setInterval(function() {
+                            var now = new Date().getTime();
+                            var t = deadline - now;
+                            var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                            var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+                            var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                            var seconds = Math.floor((t % (1000 * 60)) / 1000);
+                            document.getElementById("demo").innerHTML = days + "d "
+                            + hours + "h " + minutes + "m " + seconds + "s ";
+                            if (t < 0) {
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "EXPIRED";
+                            }
+                            }, 1000);
+        </script>
 </div>
 
 <script type="text/javascript">
