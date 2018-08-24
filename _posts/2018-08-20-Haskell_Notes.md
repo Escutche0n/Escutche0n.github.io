@@ -1,7 +1,6 @@
 ---
 layout:     post
 title:      Haskell Notes
-subtitle:   Hello Haskell
 date:       2018-08-20
 author:     EC
 catalog: true
@@ -11,13 +10,9 @@ tags:
 	- English Posts
 ---
 
-# Haskell  Notes
-
-
+### Haskell  Notes
 
 > Functional programming is about programming with functions as values. This emphasis leads to programs that are usually <u>concise</u>, <u>precise</u> and <u>reasonable</u>.
-
-
 
 ### 0.   Origin
 
