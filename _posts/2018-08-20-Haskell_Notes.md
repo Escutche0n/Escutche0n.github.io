@@ -15,9 +15,9 @@ tags:
 
 
 
-> Functional programming is about programming with functions as values. This emphasis leads to programs that are usually <u>**concise**</u>, <u>**precise**</u> and <u>**reasonable**</u>.
+> Functional programming is about programming with functions as values. This emphasis leads to programs that are usually <u>concise</u>, <u>precise</u> and <u>reasonable</u>.
 
-[TOC]
+
 
 ### 0.   Origin
 
