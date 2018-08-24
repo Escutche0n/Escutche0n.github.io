@@ -2,7 +2,7 @@
 layout:     post
 title:      Haskell Notes
 subtitle:   Hello Haskell
-date:       2018-08-02
+date:       2018-08-20
 author:     EC
 catalog: true
 tags:
