@@ -7,8 +7,8 @@ author:     EC
 catalog: true
 tags:
         - Haskell
-	- Code
-	- English
+	- 编程
+	- English Posts
 ---
 
 # Haskell  Notes
@@ -1608,8 +1608,6 @@ The next function we define allows us to look up values.
 >			Nothing -> Nothing
 >			Just ts	-> lookup ks ts
 ```
-
-![屏幕快照 2018-08-17 下午10.27.20](/Users/elvischen/Desktop/屏幕快照 2018-08-17 下午10.27.20.jpg)
 
 
 
