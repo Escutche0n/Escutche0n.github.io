@@ -3,7 +3,7 @@ layout:     post
 title:      Github 从入门到放弃
 subtitle:   一个新手的 Git 入坑指南
 date:       2018-08-25
-author:     EC
+author:     阿陈
 header-img: img/post-bg-github.jpg
 catalog: true
 tags:
