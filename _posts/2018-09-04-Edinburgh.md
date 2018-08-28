@@ -26,7 +26,4 @@ This is a video test post.
 
 
 
-```
-{% include youtubePlayer.html id=page.nuckTcoZG4Q %}
-```
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nuckTcoZG4Q?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
