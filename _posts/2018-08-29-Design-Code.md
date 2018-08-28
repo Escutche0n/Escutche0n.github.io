@@ -13,7 +13,7 @@ tags:
 
 
 
-### CHAPTER 1 (12 Sections)
+### CHAPTER 1
 
 - Learn iOS 11 Design
 - Designing for iPhone X
@@ -26,7 +26,7 @@ tags:
 - UI Sounds
 - Design Inspiration
 
-### CHAPTER 2 (21 Sections)
+### CHAPTER 2
 
 - Learn Sketch
 - Powerful Start in Sketch
@@ -50,7 +50,7 @@ tags:
 - Intro to Framer
 - Prototyping in Keynote
 
-### CHAPTER 3 (19 Sections)
+### CHAPTER 3
 
 - Learn Swift 4
 - Intro to Xcode 9
@@ -72,7 +72,7 @@ tags:
 - Status Bar
 - Storyboard in Playground
 
-### CHAPTER 4 (22 Sections)
+### CHAPTER 4
 
 - Tab Bar
 - Navigation Bar
@@ -97,7 +97,7 @@ tags:
 - TestFlight
 - Publish to the App Store
 
-### CHAPTER 5 (9 Sections)
+### CHAPTER 5
 
 - Introduction to SpriteKit
 - Joystick
@@ -109,7 +109,7 @@ tags:
 - Life System
 - Game Sounds
 
-### CHAPTER 6 (7 Sections)
+### CHAPTER 6
 
 * Sketch Plugin Project
 * Angle Class
@@ -119,7 +119,7 @@ tags:
 * Working with Symbols
 * Dialog and Selections
 
-### CHAPTER 7 (8 Sections)
+### CHAPTER 7
 
 * Character Animation Part 1
 * Character Animation Part 2
@@ -130,7 +130,7 @@ tags:
 * Prototyping Part 2
 * Prototyping Part 3
 
-### CHAPTER 8 (11 Sections)
+### CHAPTER 8
 
 * Introduction to ARKit
 * SceneKit Scene Editor
@@ -144,7 +144,7 @@ tags:
 * Buttons & Interactions
 * Multiple Screens
 
-### CHAPTER 9 (5 Sections)
+### CHAPTER 9
 
 * Intro to Sound Design
 * Introduction to Cubase
@@ -152,14 +152,14 @@ tags:
 * UI Sound
 * Notification Sound
 
-### CHAPTER 10 (4 Sections)
+### CHAPTER 10
 
 * Concept and Storyboard
 * Screenflow Basics
 * Addiing Motion
 * Match Cut
 
-### CHAPTER 11 (12 Sections)
+### CHAPTER 11
 
 * React for Designers
 * Basic Styling with CSS
