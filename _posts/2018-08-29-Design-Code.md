@@ -21,7 +21,7 @@ tags:
 - Design for Apple Watch
 - Learn Colors
 - Learn Typography
-- Learn Animations
+- [Learn Animations](https://escutche0n.github.io/2018/08/29/Learn-Animations/)
 - UI Icons
 - UI Sounds
 - Design Inspiration
