@@ -36,15 +36,19 @@ Typically, you don’t need to set more than 2 animation states: **Begin** and *
 
 This is as simple as moving the position X and Y. With different timing, Translate is used for sliding, bouncing and shaking visual elements.
 
-![animation-1](https://s1.ax1x.com/2018/08/29/POxYo6.gif)
+![translation](https://s1.ax1x.com/2018/08/29/POxYo6.gif)
 
 ##### ROTATE 旋转
 
 By changing the angle of the element, you can create interesting effects like the loading animation in iOS, or the **Add** icon that turns into a **Close** icon.
 
+![rotation](https://storage7.cuntuku.com/2018/08/29/0hW9z.gif)
+
 ##### SCALE 缩放
 
 This animation pervades iOS, such as the app icon that zooms inside the app, or the photo thumbnails that expand to full-screen view.
+
+
 
 ### Animation Curve 动画曲线
 
