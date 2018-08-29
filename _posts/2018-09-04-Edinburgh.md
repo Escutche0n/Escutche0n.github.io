@@ -10,4 +10,4 @@ tags:
     - 垃圾场
 ---
 
-{% Video assets/spacetestSMALL_512kb.mp4 500 400 %}
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
