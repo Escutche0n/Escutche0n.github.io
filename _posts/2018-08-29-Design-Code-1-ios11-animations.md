@@ -48,19 +48,13 @@ By changing the angle of the element, you can create interesting effects like th
 
 This animation pervades iOS, such as the app icon that zooms inside the app, or the photo thumbnails that expand to full-screen view.
 
-
+![scale](https://media.giphy.com/media/51Y4uDK4J2iXsK6m5S/giphy.gif)
 
 ### Animation Curve 动画曲线
 
 The **curve** plays a big part in making the animation more <u>life-like</u>. Good animations replicate real physics. A ball that bounces on the ground makes a much more interesting subject than one that falls flat. Modern apps tend to use Spring and Ease animations much more than Linear.
 
-常用的曲线有：
-
-- Linear
-- Ease In
-- Ease Out
-- Ease In Out
-- Spring
+![curve](https://media.giphy.com/media/u47vZLOdCk5CWJ96DJ/giphy.gif)
 
 ### 3D Transform 3D 变换
 
