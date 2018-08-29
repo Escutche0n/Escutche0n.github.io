@@ -64,13 +64,13 @@ tags:
 
 #### Property Change 特性改变
 
-一个非常流行的动画技巧就是改变 **颜色 **( **colour** )和 **透明度** ( **opacity** ) **属性**。只需在淡入淡出特效中修改透明度，这尤其的常见。在图层、文字和背景颜色上做改变也能产生有效的过渡。
+一个非常流行的动画技巧就是改变 **颜色 ** ( **colour** ) 和 **透明度** ( **opacity** ) **属性**。只需在淡入淡出特效中修改透明度，这尤其的常见。在图层、文字和背景颜色上做改变也能产生有效的过渡。
 
 ![property-change](https://media.giphy.com/media/1yMzoIij6pZ0qCjJe3/giphy.gif)
 
 #### Combining Animations 组合动画
 
-基本上每一个场合你都需要将 2 到 3 个变换同时组合到一起。这样的话你能得到有趣的生活中的物理效果，如**弹跳** (**Bounce**)，**渐变 **(**Morph**) 和**抖动**(**Shake**)等。
+基本上每一个场合你都需要将 2 到 3 个变换同时组合到一起。这样的话你能得到有趣的生活中的物理效果，如**弹跳**  ( **Bounce** ) ，**渐变 **( **Morph** ) 和**抖动** ( **Shake** ) 等。
 
 来自 Tubik Studio 的 [动画](https://dribbble.com/shots/2148431-GIF-for-the-Timeline-App)
 
