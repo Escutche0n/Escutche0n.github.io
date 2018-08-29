@@ -36,6 +36,8 @@ Typically, you don’t need to set more than 2 animation states: **Begin** and *
 
 This is as simple as moving the position X and Y. With different timing, Translate is used for sliding, bouncing and shaking visual elements.
 
+![animation-1](img/in-post-img/animation-1.gif)
+
 ##### ROTATE 旋转
 
 By changing the angle of the element, you can create interesting effects like the loading animation in iOS, or the **Add** icon that turns into a **Close** icon.
