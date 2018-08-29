@@ -60,19 +60,31 @@ The **curve** plays a big part in making the animation more <u>life-like</u>. 
 
 When changing the position, you can also play with the X, Y and Z values. Although generally more rare and harder to pull, 3D transforms can give interesting results that can really set your app apart.
 
+![3d-transform](https://media.giphy.com/media/d5vw0ay440iIhcEdUr/giphy.gif)
+
 ### Property Change 特性改变
 
 A very popular animation technique is to change the **color** and **opacity properties**. Just modifying the opacity results in the Fade In / Fade Out effect, which is extremely common. Animating the layer, text and background colors can also yield effective transitions.
 
+![property-change](https://media.giphy.com/media/1yMzoIij6pZ0qCjJe3/giphy.gif)
+
 ### Combining Animations 组合动画
 
 On almost every occasion, you’ll want to work with 2 or 3 transforms at the same time. By doing so, you get interesting animations inspired by real life physics such as **Bounce**, **Morph**, **Shake**, etc.
+
+[Animation](https://dribbble.com/shots/2148431-GIF-for-the-Timeline-App) by Tubik Studio.
+
+![combination](https://media.giphy.com/media/YiJnuvH0ZMKclWWdFW/giphy.gif)
 
 ### Animations Shouldn't Last Longer Than 1 second
 
 A long animation can lead to frustration — it can get in the way of performing a task. The ideal duration that I’ve personally found is **0.3 - 1 second**. If you do a Fade In, Slide or Scale, that’s the duration that you should aim for. Anything shorter would make seem like there was no animation, or worse it could stress your users. Anything longer may seem underperforming and can be in the way of doing what they want.
 
 > Design is the **fundamental soul** of a human-made creation that ends up expressing itself in successive outer layers of the product or service. – Steve Jobs
+
+[Animation](https://dribbble.com/shots/1949368-Sidebar-animation) by Jakub Antalík.
+
+![animation](https://media.giphy.com/media/46zr9CKSUsy7Mh9rD3/giphy.gif)
 
 ### Working with Developers
 
@@ -87,3 +99,9 @@ You have several animation tools to choose from. Some require little to no exper
 - Origami
 - Framer
 - After Effects
+
+
+
+"Design and Code Chapter 1 Learn Animation"
+
+Tweet "Learn Animations - Good animations enhance, bad animations distract by @MengTo"
