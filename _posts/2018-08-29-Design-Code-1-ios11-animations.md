@@ -36,7 +36,7 @@ Typically, you don’t need to set more than 2 animation states: **Begin** and *
 
 This is as simple as moving the position X and Y. With different timing, Translate is used for sliding, bouncing and shaking visual elements.
 
-![animation-1](img/in-post-img/animation-1.gif)
+![animation-1](https://s1.ax1x.com/2018/08/29/POxYo6.gif)
 
 ##### ROTATE 旋转
 
