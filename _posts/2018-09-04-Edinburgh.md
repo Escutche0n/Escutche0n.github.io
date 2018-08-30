@@ -7,7 +7,7 @@ author:     EC
 header-img: img/post-bg-edinburgh.jpg
 catalog: true
 tags:
-    - 旅行
+    - 由于时间与地域的关系
 ---
 
 > 旅途，就是用自己的眼睛去看一场电影。
