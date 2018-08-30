@@ -38,11 +38,14 @@ tags:
 
 #### 景点
 
-1. **爱丁堡城 | Edinburgh castle**
+1. **爱丁堡城 Edinburgh castle**
+2. **卡尔顿山 Calton Hill**
+3. **亚瑟王座 Arthur’s Seat**
 
 #### 美食
 
-- 
+- Haggis
+- 三文鱼
 
 ---
 
