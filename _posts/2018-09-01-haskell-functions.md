@@ -5,7 +5,7 @@ subtitle:
 date:       2018-08-26
 author:     EC
 tags:
-    - Haskel
+    - Haskell
 ---
 
 ### Haskell Functions
