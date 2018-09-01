@@ -7,8 +7,8 @@ author:     EC
 header-img: img/post-bg-designcode-animation.jpg
 catalog: 
 tags:
-    - 设计
-    - 动画
+    - Animation
+    - Design+Code
 ---
 
 
