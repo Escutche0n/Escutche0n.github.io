@@ -5,7 +5,7 @@ subtitle:   Good animations enhance, bad animations distract
 date:       2018-08-29
 author:     EC
 header-img: img/post-bg-designcode-animation.jpg
-catalog: false
+catalog: 
 tags:
     - 设计
     - 动画

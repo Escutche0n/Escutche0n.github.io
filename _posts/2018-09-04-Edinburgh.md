@@ -5,7 +5,7 @@ subtitle:
 date:       2018-09-04
 author:     EC
 header-img: img/post-bg-edinburgh.jpg
-catalog: false
+catalog: 
 tags:
     - 由于时间与地域的关系
 ---
