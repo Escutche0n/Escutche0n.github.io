@@ -12,6 +12,16 @@ layout: default
 		<title>EC - MONO</title>
 		<link rel="stylesheet" type="text/css" href="css/timeline.css" />
 		<script src="js/modernizr.custom.js"></script>
+		<script>
+				function   document.onmousedown()
+				{
+      			if(event.button==2||event.button==3)
+      					{
+            				alert( "右健被禁止" )
+            				return false
+        				}
+				}
+		</script>
 	</head>
 	<body>
 		<div class="container" style="margin:0;padding:0;width:100%;">
