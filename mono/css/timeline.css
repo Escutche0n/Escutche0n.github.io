@@ -154,6 +154,14 @@ body, html {
     background-size: 20px;
 }
 
+.i-download:before {
+	content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url("../images/icon-download.png") 50% 50% no-repeat;
+    background-size: 20px;
+}
 
 /******* Hux Branch *****/
 
