@@ -11,8 +11,6 @@ tags:
 
 > 旅途，就是用自己的眼睛去看一场电影。
 
-
-
 ### 为什么去爱丁堡
 
 八月底的某一天早醒过来合计着考完试正好想一个人背包去旅行。
@@ -23,42 +21,44 @@ tags:
 
 那既然有这么好的机会，那就背上包，带上 MacBook 和相机，上路吧。
 
-人生新体验之第一次**一边写东西一边玩**。
-
-
-
 ### 行程准备
 
 #### 电影
 
-##### 云图
+- 云图
 
-##### One Day
+  Scott Monument
 
-##### 勇敢的心
+- One Day
+
+- 勇敢的心
 
 #### 景点
 
-##### 爱丁堡城 Edinburgh castle
+爱丁堡城 Edinburgh Castle
 
-##### 卡尔顿山 Calton Hill
+卡尔顿山 Calton Hill
 
-##### 亚瑟王座 Arthur’s Seat
+亚瑟王座 Arthur’s Seat
 
-#### 美食
+Princes St Gardens
 
-- Haggis
-- 三文鱼
+National Museum of Scotland
 
-#### 摄影景点
+Scott Monument
 
-##### Calton Hill
+#### 摄影
 
-![Calton Hill](https://www.google.co.uk/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwja4d2AtZTdAhXNZFAKHV8WCqUQjRx6BAgBEAU&url=https%3A%2F%2Fwww.wtjournal.com%2Fthe-view-from-calton-hill-edinburgh-scotland%2F&psig=AOvVaw10QkPtHGp_rm8tw4B1ZiCa&ust=1535705993080857)
+##### Golden Hour
 
-##### Victoria Street
+|   Blue Hour   | Golden Hour  |  Sun  |
+| :-----------: | :----------: | :---: |
+|  5:38 - 5:54  | 5:54 - 7: 07 | 6:24  |
+| 20:15 - 20:28 | 19:09-20:15  | 19:57 |
 
-##### The Crags and the Radical Road
+#### 地图标记
+
+{% include edimap.html %}
 
 ---
 
@@ -70,9 +70,18 @@ tags:
 
 [爱丁堡十大最值得去的景点](https://www.honglingjin.co.uk/121729.html)
 
+[打开爱丁堡的正确方式](https://bbs.qyer.com/thread-2901490-1.html)
+
+[吃货必去的爱丁堡八大餐厅](https://www.bangli.uk/post/11403)
+
 [Top 10 Edinburgh Photography Locations](https://www.edinburghphotography.com/top-10-edinburgh-photography-locations/)
 
 [The view from Calton Hill - Edinburgh, Scotland](https://www.wtjournal.com/the-view-from-calton-hill-edinburgh-scotland/)
 
+[How to Spend a Day in Edinburgh](https://theculturetrip.com/europe/united-kingdom/scotland/articles/how-to-spend-a-day-in-edinburgh/)
 
+[The Top 10 Free Things To Do In Edinburgh](https://theculturetrip.com/europe/united-kingdom/scotland/articles/the-top-10-free-things-to-do-in-edinburgh/)
 
+[A Walk Around Edinburgh in 18 Perfect Instagrams](https://theculturetrip.com/europe/united-kingdom/scotland/articles/a-walk-around-edinburgh-in-18-perfect-instagrams/)
+
+[Edinburgh's 10 Most Beautiful Buildings: From Stone to Glass](https://theculturetrip.com/europe/united-kingdom/scotland/articles/the-10-most-beautiful-edinburgh-buildings-you-won-t-find-anywhere-else/)
