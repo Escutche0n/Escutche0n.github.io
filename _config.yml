@@ -1,16 +1,16 @@
 # Site settings
 title: EC Blog
-SEOTitle: 阿陈的博客 | EC Blog
+SEOTitle: EC Blog
 header-img: img/index_bg.jpg
 email: elvis.tk.chen@gmail.com
-keyword: "EC, EC Blog, 阿陈的博客, chenyuefu, 陈跃夫, iOS, Apple, iPhone"
+keyword: "EC, EC Blog, chenyuefu, 陈跃夫, iOS, Apple, iPhone"
 url: "http://Escutche0n.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/Escutche0n/Escutche0n.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Emmm...Fine!"
+sidebar-about-description: "Student, Innovator, Photograher, Designer"
 sidebar-avatar: /img/about-Elvis.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
