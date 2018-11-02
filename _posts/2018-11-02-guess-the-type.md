@@ -1,14 +1,13 @@
 ---
 layout:     post
-title:      The Prelude - Guess the Type
+title:      Type
 subtitle:   Haskell Note I
-date:       2018-11-03
+date:       2018-11-02
 author:     Samantha Frohlich and Adam Beddoe
 header-img: 
 catalog: true
 tags:
-        - Haskell
-	- 笔记
+        - Haskell, - 笔记
 ---
 
 # The Prelude - Guess the Type
