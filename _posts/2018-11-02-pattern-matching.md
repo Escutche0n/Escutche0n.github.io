@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Haskell 模式匹配"
-subtitle:   "Haskell Note II - Pattern Matching"
+title: "Haskell 模式匹配"
+subtitle: "Haskell Note II - Pattern Matching"
 date:       2018-11-02
 author:     "EC"
 header-img: header-img: "img/post-abstract-2.jpg"
@@ -11,31 +11,27 @@ tags:
  - 笔记
 ---
 
-
-
-# The Prelude - Pattern Matching
-
 ### Pattern Matching
 
 **Pattern Matching** is the bread and butter of Haskell programming. If you are looking to define a function and you don’t know what to do - **pattern match**! All pattern matching consists of is going through case by case what you want your function to do. Normally this involves going through all the possible constructors of a data type. Observe:
 
 ```haskell
-germanTranslationRobot :: Bool → String
-germanTranslationRobot False = "Falsch"
-germanTranslationRobot True = "Richtig"
+    germanTranslationRobot :: Bool -> String
+    germanTranslationRobot False = "Falsch"
+    germanTranslationRobot True = "Richtig"
 ```
 
 Looking at the type signature of this function you can see that it takes in a `Bool` and returns a `String`. This function can only have two possible inputs: `True` or `False`, `Richtig` oder `Falsch`, making the pattern matching very simple. The first line of the defintion tells the function what to do if the input is `True`; the second line tells it what to output when it receives `False`.
 
-Lines in a definition follow the same structure: name of function, inputs that you are pattern matching on, equals sign to seperate the context from the result, and an expression that tells the function what it’s actually going to do. The LHS of the equals is like the description of the case in which you want the matching code on the RHS to be executed. You are just comprehensively informing the function what you want it to do: “germanTranslationRobot when you are given `True` could you please return the string `"Richtig"`. Thank you! :-)”.
+Lines in a definition follow the same structure: name of function, inputs that you are pattern matching on, equals sign to seperate the context from the result, and an expression that tells the function what it’s actually going to do. The LHS of the equals is like the description of the case in which you want the matching code on the RHS to be executed. You are just comprehensively informing the function what you want it to do: “*germanTranslationRobot when you are given `True` could you please return the string `"Richtig"`. Thank you! :-)*”.
 
 The above example shows pattern matching directly on constructor key words (in this case `True` or `False`) however you can also use the LHS of the equals to name the various input parameters so that you can refer to them easily on the RHS of the defintion where you will actually compute stuff with them. These are just names, you can chose any names you want.
 
 ```haskell
-add :: Num a ⇒ a → a → a
+add :: Num a => a -> a -> a
 add x y = x + y
 
-plus :: Num a ⇒ a → a → a
+plus :: Num a => a -> a -> a
 plus water melon = water + melon
 ```
 
@@ -44,7 +40,7 @@ The above two functions do exactly the same thing, the only difference is that `
 One pattern match that you will do so much that it will almost become part of your being is pattern matching on lists. Recall that lists have two constructors: `[ ]` and `(:)`. Since when you pattern match you always start with the base case the first line of a pattern match on lists will normally be telling the function what to do when it is given the empty list. The next line will say what to do with the rest of the list.
 
 ```haskell
-sum :: Num a ⇒ [a ] → a
+sum :: Num a => [a ] -> a
 sum [ ]      = 0
 sum (x : xs) = x + sum xs
 ```
@@ -60,7 +56,7 @@ Notice how `(x : xs)` is in brackets? This is so that the compiler can type chec
 One final trick that you may see people use is the **underscore**. When naming inputs if there is an input that you don’t care about and don’t need to name since you are not doing to use it on the RHS you can just put an underscore as a place holder.
 
 ```Haskell
-take :: Int → [a] → [a]
+take :: Int -> [a] -> [a]
 take [ ] = [ ]
 take 0 = [ ]
 take n (x : xs) = x : (take (n − 1) xs)
@@ -73,7 +69,7 @@ take n (x : xs) = x : (take (n − 1) xs)
 When you want to inspect the value of an input instead of just pattern matching on its constructors you should use guards.
 
 ```haskell
-compare :: Eq a ⇒ a → a → String
+compare :: Eq a => a -> a -> String
 compare x y
     | x ≡ y = "They are the same!"
     | otherwise = "Different"
@@ -89,17 +85,17 @@ Sometimes in Haskell you may want to whip up a function on the fly and not bothe
 	type Llama = String
 	type HappyLlama = String
 
-	feedLlamas :: [Llama ] → [HappyLlama ]
-	feedLlamas = map (λllama → llama ++ " :-)")
+	feedLlamas :: [Llama ] -> [HappyLlama ]
+	feedLlamas = map (λllama -> llama ++ " :-)")
 	feedLlamas ["Adam", "Alessio", "Ibrahim", "Jamie", "Charlie"]
 	= ["Adam :-)", "Alessio :-)", "Ibrahim :-)", "Jamie :-)", "Charlie :-)"]
 
 ```
 
-The above is an example of how you could use llambdas to make a helper function. All this function is doing is taking in a list of `Strings` (or `Llamas`) and appending similie faces to each String to create `HappyLlamas`! It does this by mapping (`λllama → llama ++ " :-)"`) across the initial list (`map` is just a function that applies a function to each element in a list). I could easily have created and named this function like so:
+The above is an example of how you could use llambdas to make a helper function. All this function is doing is taking in a list of `Strings` (or `Llamas`) and appending similie faces to each String to create `HappyLlamas`! It does this by mapping (`λllama -> llama ++ " :-)"`) across the initial list (`map` is just a function that applies a function to each element in a list). I could easily have created and named this function like so:
 
 ```haskell
-    toHappy :: Llama → HappyLlama
+    toHappy :: Llama -> HappyLlama
     toHappy llama = llama ++ " :-)"
 ```
 
@@ -112,13 +108,13 @@ This is just a general introduction on how to use lambdas with a silly trival ex
 Function composition is a fancy way of doing one function followed by another. You can think of it like a production line, where you feed the value in the far right and it gets operated on by each function in order from right to left and the final result is spat out.
 
 ```haskell
-    (◦) :: (b → c) → (a → b) → (a → c)
+    (◦) :: (b -> c) -> (a -> b) -> (a -> c)
 ```
 
-It utilises the `(◦)` function. It may seem annoying that it is `(b → c)` then `(a → b)` but there is a reason for this. It is because the second function is done first. For example:
+It utilises the `(◦)` function. It may seem annoying that it is `(b -> c)` then `(a -> b)` but there is a reason for this. It is because the second function is done first. For example:
 
 ```haskell
-	productionLine :: Int → Int productionLine = (+7) ◦ (∗2)
+	productionLine :: Int -> Int productionLine = (+7) ◦ (∗2)
 ```
 
 This function takes in an Int, which is fed first to the `(∗2)` machine, which spits out and answer that is in turn fed to the `(+7)` machine. So if I feed `3` to the productionLine it would get multiplied by `2`, giving `6`, then `6` would have `7` added to it resulting in `13`.
@@ -128,9 +124,9 @@ This function takes in an Int, which is fed first to the `(∗2)` machine, which
 Much like how in the real world you have people that are lazy and people that are not, when it comes to evalution order in programming languages you have lazy languages and eager languages. Haskell is lazy. It won’t do something unless it absolutely has to. You can think of this much like students and lecturers:
 
 ```haskell
-    student :: Question → Solution
+    student :: Question -> Solution
     
-    lecturer :: Int → [Question ] → [Solution ]
+    lecturer :: Int -> [Question ] -> [Solution ]
     lecturer n xs = take n (map student xs)
 ```
 
@@ -155,11 +151,11 @@ Intuitively this makes sense. For example if f was `(+2)`: adding two to a whole
 When it comes to proofs it is always handy to have the definitions of the functions involved written close by for easy referance:
 
 ```Haskell
-    map :: (a → b) → [a] → [b]
+    map :: (a -> b) -> [a] -> [b]
     map f [] = []
     map f (x : xs) = f x : (map f xs)
 
-    take :: Int → [a] → [a]
+    take :: Int -> [a] -> [a]
     take _ [] = []
     take 0  _ = []
     take n (x : xs) = x : (take (n - 1) xs)
@@ -183,7 +179,9 @@ All that I have done is copied the statement we want to prove with `[]` instead 
 
 Now we must prove our statement for the case (x : xs):
 
+```
 take n (map f (x : xs)) = { definition map }
+```
 
 take n (map f (x : xs)) = { definition take } (f x : take (n − 1) (map f xs)) = { induction hypothesis } (f x : map f (take (n − 1) xs)) = { definition map } map f (x : (take (n − 1) xs)) = { definition take } map f (take n (x : xs)) This stage is done in exactly the same way except we now have an extra substitution that we can make. We can use the induction hypothesis! This means that if at any point if we have an expression in the form (take n (map f xs)) we can swap it our for (map f (take n xs)) or vice versa, in the example proof the IH happens when n = (n − 1) which is perfectly valid. Clearly we couldn’t have used this immediately due to the presence of the x before the xs. Since we have now isolated the smaller case of xs we can use the IH because induction is based on assuming something for a smaller csse making the bigger case true.
 
