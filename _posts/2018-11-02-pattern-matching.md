@@ -1,14 +1,14 @@
 ---
 layout:     post
-title:      Pattern Matching
-subtitle:   Haskell Note II
+title:      "Haskell 模式匹配"
+subtitle:   "Haskell Note II - Pattern Matching"
 date:       2018-11-02
-author:     Samantha Frohlich and Adam Beddoe
-header-img: img/
+author:     "EC"
+header-img: header-img: "img/post-abstract-2.jpg"
 catalog: true
 tags:
-        - Haskell
-        - 笔记
+ - Haskell
+ - 笔记
 ---
 
 
