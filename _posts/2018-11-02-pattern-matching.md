@@ -4,7 +4,7 @@ title:      Pattern Matching
 subtitle:   Haskell Note II
 date:       2018-11-02
 author:     Samantha Frohlich and Adam Beddoe
-header-img: 
+header-img: img/
 catalog: true
 tags:
         - Haskell
