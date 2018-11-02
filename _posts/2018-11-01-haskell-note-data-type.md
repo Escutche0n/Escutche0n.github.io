@@ -16,7 +16,7 @@ tags:
 What are types? Types are how you describe the data you will work with. They allow you to classify parameters of functions. This should help you when designing functions: whenever you want to make a function always think about what its type should be. Before you give the definition of a function you normally write the type signature using the `::` notation. For example,
 
 ```haskell
-lion :: BigCat
+	lion :: BigCat
 ```
 
 is like the function introducing itself and saying, “*I am lion and I have type BigCat*”.
@@ -71,12 +71,14 @@ Tuples are a data structure that allows you to collect together elements of diff
 Tuples have a fixed size after creation and the constructor for a tuple is `(, )`. Having one comma will make you a pair tuple, adding more commas will create bigger tuples with more slots for all your favourite data types (but the max tuple size is 62):
 
 ```haskell
-	(, ) :: a -> b -> (a, b)
-	(, , ) :: a -> b -> c -> (a, b, c)
+	(, )     :: a -> b -> (a, b)
+	(, , )   :: a -> b -> c -> (a, b, c)
 	(, , , ) :: a -> b -> c -> d -> (a, b, c, d)
 ```
 
-The type of the pair tuple constructor `(, )` says “you gimme an `a`, and a `b` and I’ll bung them in a tuple for you”. It is like ordering lots of presents for yourself from the same online shop and having them sent to you in the one parcel to save on postage. For bigger tuples, the alphabet is used to enumerate subsequent slots you wish to have in your tuple. What happens when the alphabet runs out though?! Don’t worry you aren’t limited to 26 slots in a tuple, Haskell has an inspired naming system for slots after slot z. If you’re curious just ask GHCi for the type of `(, , , , , , , , , , , , , , , , , , , , , , , , , , )`.
+The type of the pair tuple constructor `(, )` says “you gimme an `a`, and a `b` and I’ll bung them in a tuple for you”. It is like ordering lots of presents for yourself from the same online shop and having them sent to you in the one parcel to save on postage. For bigger tuples, the alphabet is used to enumerate subsequent slots you wish to have in your tuple. What happens when the alphabet runs out though?! Don’t worry you aren’t limited to 26 slots in a tuple, Haskell has an inspired naming system for slots after slot z.
+
+If you’re curious just ask GHCi for the type of `(, , , , , , , , , , , , , , , , , , , , , , , , , , )`.
 
 **Lists** are a data structure that you will become very familiar with. You will use them literally all the time. We love lists. Lists are the best. Lists can be of infinite size, so if you ever want to freak out the general public: style your terminal with a black background and coloured font (something I hope you have already done like seriously if you have black font on white what are you doing with your life?), put your terminal full screen, open GHCi, type `[1 . .]`. All `[1 . .]` is an infinite list of numbers starting from one **but** your terminal will start spitting out these numbers onto the terminal as fast as it can. Looks like some serious hackery is going down.
 
@@ -89,7 +91,7 @@ where:
 
 ```haskell
 	[ ] :: [a ]
-	(:) :: a → [a ] → [a ]
+	(:) :: a -> [a ] -> [a ]
 ```
 
 The list data type has two <u>constructors</u>: a list can either be empty `[ ]`, or it can have an element (of type `a`) prefixed onto another list. The type of `[ ]` is hopefully fairly straight forward: it has type list of a, it just so happens that in this context the empty list constructor has been chosen. The type of `(:)` is a little more involved. It takes an element and a list and returns a new list. This new list is just the old list but with the element added to the head. As indicated by the `a`, all the elements must be of the same type.
@@ -113,7 +115,7 @@ Luckily the clever people at Haskell have gifted us **type classes**. You can th
         (+) :: a -> a -> a
         (-) :: a -> a -> a
         (*) :: a -> a -> a
-        negate :: 	a -> a
+        negate ::   a -> a
 ```
 
 Now we can define `add` so that it will work on any numeric `a`:
