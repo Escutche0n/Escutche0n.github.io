@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      Type
+title:      The Prelude - Guess the Type
 subtitle:   Haskell Note I
 date:       2018-11-02
 author:     Samantha Frohlich and Adam Beddoe
-header-img: post-abstract-1
+header-img: img/post-abstract-1
 catalog: true
 tags:
         - Haskell
