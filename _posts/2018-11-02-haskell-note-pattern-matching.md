@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Haskell 模式匹配"
-subtitle:   "Haskell Note II \- Pattern Matching"
+subtitle:   "Haskell Note II Pattern Matching"
 date:       2018-11-02
 author:     "EC"
 header-img: header-img: "img/post-abstract-2.jpg"
