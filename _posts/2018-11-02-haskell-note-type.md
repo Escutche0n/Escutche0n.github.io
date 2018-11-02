@@ -1,17 +1,15 @@
 ---
 layout:     post
-title:      The Prelude - Guess the Type
+title:      "Haskell Data Type"
 subtitle:   Haskell Note I
 date:       2018-11-02
-author:     Samantha Frohlich and Adam Beddoe
-header-img: img/post-abstract-1
+author:     "EC"
+header-img: "img/post-abstract-1.jpg"
 catalog: true
 tags:
-        - Haskell
-        - 笔记
+ - Haskell
+ - 笔记
 ---
-
-# The Prelude - Guess the Type
 
 ### Types
 
