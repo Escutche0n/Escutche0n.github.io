@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Haskell 数据类型"
-subtitle:   "Haskell Note I data types"
+title:      Haskell 数据类型
+subtitle:   "Haskell Note I - data types"
 date:       2018-11-01
 author:     "EC"
 header-img: "img/post-abstract-1.jpg"
