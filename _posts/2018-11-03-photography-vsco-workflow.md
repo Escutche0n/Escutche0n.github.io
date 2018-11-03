@@ -18,11 +18,15 @@ tags:
 
 今天写一篇关于如何使用 Lightroom 以及 VSCO Film 系列胶片滤镜的流程，希望大家喜欢。需要用到的工具为 Windows / Mac 版本的 **Adobe Photoshop Lightroom Classic CC** (之后简称 **Lightroom** )，以及一套 **VSCO Film** (或你喜爱的) 滤镜。
 
-Lightroom 是当今数码拍摄之中不可或缺的一个步骤，与同为 Adobe 公司旗下的 Photoshop 相得益彰，然而两者的作用不太相同 。Lightroom 更偏向于对图片的光影和颜色进行**统一**的处理，对于风光类和食物类照片可以直接用 Lightroom 修片。Photoshop 则是在其基础上添加了 **图层 Layer** 和 **笔刷 Brush** 等概念，典型的应用场景为将多张图片合成，或者在人像类图片中对其脸部进行局部的修缮。通过 Lightroom 的全称 *Adobe Photoshop Lightroom* 我们可以看出，Lightroom 于 Photoshop 如同孩子与母亲的关系，事实上正是如此，Lightroom 几乎所有的功能都在 Photoshop 中被整理为了 **Adobe Camera Raw** 工具。在Adobe公司推出移动版的 Lightroom 之后，原经典的电脑版本正式更名为 Classic CC。
+Lightroom 是当今数码拍摄之中不可或缺的一个步骤，与同为 Adobe 公司旗下的 Photoshop 相得益彰，然而两者的作用不太相同 。
+
+[^1]: 通过 Lightroom 的全称 *Adobe Photoshop Lightroom* 我们可以看出，Lightroom 于 Photoshop 如同孩子与母亲的关系，事实上正是如此，Lightroom 几乎所有的功能都在 Photoshop 中被整理为了 **Adobe Camera Raw** 工具。在Adobe公司推出移动版的 Lightroom 之后，原经典的电脑版本正式更名为 Classic CC
+
+ 更偏向于对图片的光影和颜色进行**统一**的处理，对于风光类和食物类照片可以直接用 Lightroom 修片。Photoshop 则是在其基础上添加了 **图层 Layer** 和 **笔刷 Brush** 等概念，典型的应用场景为将多张图片合成，或者在人像类图片中对其脸部进行局部的修缮。。
 
 简而言之 Lightroom 更接近于如今移动端的各类 “P图软件”，有诸如曝光，阴影，色调等功能，也可以导入丰富的滤镜进行一键美化，并快速导出需要的照片。滤镜在 Lightroom 里被称作**预设 preset**，在这万千滤镜中，**VSCO Film** 作为胶片滤镜的代表独树一帜。VSCO Film 按照不同的胶片命名，其精准的还原能力使得胶片的色彩感得以在数码的世界里体现的淋漓尽致。
 
-VSCO Film 截至目前分为七个系列，其区别可以参考知乎问题[VSCO Film 01 到 05 的区别是什么？](https://www.zhihu.com/question/23913317)
+[VSCO Film](http://vsco.co) 截至目前分为七个系列，其区别可以参考知乎问题[VSCO Film 01 到 05 的区别是什么？](https://www.zhihu.com/question/23913317)
 
 以下为 Lightroom 和 VSCO Film 的安 (pò) 装 (jiě) 简述，点此跳过废话直入正文。
 
