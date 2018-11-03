@@ -4,7 +4,7 @@ title:      我是如何修图的
 subtitle:   "VSCO Film - My Photography Workflow"
 date:       2018-11-02
 author:     "EC"
-header-img: "https://images.unsplash.com/photo-1520599918693-12354ce66a1d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0bce123e4769e564bbf0d1ee14625725&auto=format&fit=crop&w=2100&q=80"
+header-img: "https://ws3.sinaimg.cn/large/006tNbRwgy1fwv8ko1l3kj31kw11xk0p.jpg"
 catalog: true
 comments: true
 tags:
