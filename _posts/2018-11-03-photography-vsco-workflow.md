@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      我是如何修图的
+title:      我是如何使用 VSCO Film 修图的
 subtitle:   "VSCO Film - My Photography Workflow"
-date:       2018-11-02
+date:       2018-11-03
 author:     "EC"
 header-img: "img/post-bg-lightroom.jpg"
 catalog: true
