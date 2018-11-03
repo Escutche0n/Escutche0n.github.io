@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      我是如何使用 VSCO Film 修图的
+title:      我的 VSCO Film 工作流
 subtitle:   "VSCO Film - My Photography Workflow"
 date:       2018-11-03
 author:     "EC"
