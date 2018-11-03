@@ -46,11 +46,19 @@ VSCO Film [百度云](https://pan.baidu.com/s/1jxJdsC1nk_JQn31ZnbDR5g)  密码 <
 
 各个相机品牌之间 RAW 文件命名方式不同，如松下的 `RW2`，佳能的 `CR2`， 尼康的 `DNG`，以及索尼的 `ARW` 等。大多数厂牌的 RAW 可以按文件夹直接导入 Lightroom 处理图像。通常意义上同一张照片的 RAW 图像会比传统的 jpg 有着更高的宽容度，意味着其保留着更多画面细节的同时带来了更广阔的后期空间，RAW 的成像素质取决于相机机身，手机照片RAW。 
 
-我习惯将所有照片存放在一个文件夹中，按照机型分类，次级文件夹按时间分类，如果有一天遇到了两次不同的拍摄，则第二次的日期后缀会 `-` 增加 brief 加以区分。
+我习惯将所有照片存放在一个图片文件夹中，按照**机型**分类，子文件夹按**时间**分类，如果有一天遇到了两次不同的拍摄，则第二次的日期后缀会 `-` 增加 brief 加以区分。
 
 ![](https://ws2.sinaimg.cn/large/006tNbRwgy1fwvg9tkxgej31gw0zy7d8.jpg)
 
+在做好了文件管理的步骤之后，才算是开始了正式的图片处理工作。
 
+![](https://ws3.sinaimg.cn/large/006tNbRwgy1fwvgtstvn9j31ao0tmdng.jpg)
+
+此处为 Lightroom Classic 2018 的加载画面。
+
+
+
+在左下角
 
 1. 粗略调整以及Rating
 2. 修图
