@@ -6,6 +6,7 @@ date:       2018-11-02
 author:     "EC"
 header-img: "img/post-abstract-2.jpg"
 catalog: true
+comments: true
 tags:
     - Haskell
     - 笔记
