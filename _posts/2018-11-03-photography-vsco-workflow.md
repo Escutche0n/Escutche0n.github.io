@@ -28,9 +28,7 @@ Lightroom 是当今数码拍摄之中不可或缺的一个步骤，与同为 Ado
 
 ---
 
-Adobe 家全家桶的安装很简单，网络上有一大堆教程很好查找。我的使用的是在[Adobe Creative Cloud](https://www.adobe.com/creativecloud/catalog/desktop.html) 的官网下载最新的适用版本，开始免费试用 (**Start free trial**)，然后用 Adobe Zii加以破解，完成。
-
-Adobe Zii 可以破解整个Adobe系列的所有产品，如 Lightroom，Photoshop 以及我们耳熟能详的 Ai，AE等数十个艺术创作工具，截至目前CC 2018系列是可以破解的。
+Adobe 家全家桶的安装很简单，网络上有一大堆教程很好查找。我的使用的是在[Adobe Creative Cloud](https://www.adobe.com/creativecloud/catalog/desktop.html) 的官网下载最新的适用版本，开始免费试用 (**Start free trial**)，然后用 Adobe Zii 加以破解，完成。Adobe Zii 可以破解整个Adobe系列的所有产品，如 Lightroom，Photoshop 以及我们耳熟能详的 Ai，AE等数十个艺术创作工具，截至目前CC 2018系列是可以破解的。
 
 
 
