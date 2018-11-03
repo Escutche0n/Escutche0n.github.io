@@ -28,7 +28,7 @@ Lightroom 是当今数码拍摄之中不可或缺的一个步骤，与同为 Ado
 
 ---
 
-Adobe 家全家桶的安装很简单，网络上有一大堆教程很好查找。我的使用的是在[Adobe Creative Cloud](https://www.adobe.com/creativecloud/catalog/desktop.html) 的官网下载最新的适用版本，开始免费试用 (**Start free trial**)，然后用 Adobe Zii 加以破解，完成。Adobe Zii 可以破解整个Adobe系列的所有产品，如 Lightroom，Photoshop 以及我们耳熟能详的 Ai，AE等数十个艺术创作工具，截至目前CC 2018系列是可以破解的。
+Adobe 家全家桶的安装很简单，网络上有一大堆教程很好查找。我的使用的是在 [Adobe Creative Cloud](https://www.adobe.com/creativecloud/catalog/desktop.html) 的官网下载最新的适用版本，开始免费试用 (**Start free trial**)，然后用 Adobe Zii 加以破解，完成。Adobe Zii 可以破解整个Adobe系列的所有产品，如 Lightroom，Photoshop 以及我们耳熟能详的 Ai，AE等数十个艺术创作工具，截至目前CC 2018系列是可以破解的。
 
 
 
@@ -42,9 +42,11 @@ VSCO Film [百度云](https://pan.baidu.com/s/1jxJdsC1nk_JQn31ZnbDR5g)  密码 <
 
 ##### 文件管理
 
-无论是怎样的相机，在按下快门的那一刻，照片会统一存放在SD卡的某一个文件夹里并默认按照快门数量进行命名，例如我的相机是松下的GH5s。例如 `P1015150.RW2` 和 `P1015150.jpg` 就分别代表着这部相机的第 15150 张照片的两个版本，前缀 `P` 为 松下 Panasonic 的首字母，其后的 `10` 应该是一个标签，`RW2` 和 `jpg` 则代表着两个版本，其中 `jpg` 是我们常见的有损图片格式，`RW2` 是松下的原始图像文件 (raw image file，之后简称 RAW)。
+无论是怎样的相机，在按下快门的那一刻，照片会统一存放在SD卡的某一个文件夹里并默认按照历史快门数进行命名，例如我的相机是松下的GH5s。例如 `P1015150.RW2` 和 `P1015150.jpg` 就分别代表着这部相机的第 15150 张照片的两个版本，前缀 `P` 为 松下 Panasonic 的首字母，其后的 `10` 是一个标签，`RW2` 和 `jpg` 则代表着两个版本，其中 `jpg` 是我们常见的有损图片格式，`RW2` 是松下的原始图像文件 (raw image file，之后简称 RAW)。
 
 各个相机品牌之间 RAW 文件命名方式不同，如松下的 `RW2`，佳能的 `CR2`， 尼康的 `DNG`，以及索尼的 `ARW` 等。大多数厂牌的 RAW 可以按文件夹直接导入 Lightroom 处理图像。通常意义上同一张照片的 RAW 图像会比传统的 jpg 有着更高的宽容度，意味着其保留着更多画面细节的同时带来了更广阔的后期空间，RAW 的成像素质取决于相机机身，手机照片RAW。 
+
+我习惯将所有照片存放在一个文件夹中，按照机型分类，次级文件夹按时间分类，如果有一天遇到了两次不同的拍摄，则第二次的日期后缀会 `-` 增加 brief 加以区分。
 
 ![](https://ws2.sinaimg.cn/large/006tNbRwgy1fwvg9tkxgej31gw0zy7d8.jpg)
 
