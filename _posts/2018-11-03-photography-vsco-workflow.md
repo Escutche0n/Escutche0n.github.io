@@ -52,13 +52,23 @@ VSCO Film [百度云](https://pan.baidu.com/s/1jxJdsC1nk_JQn31ZnbDR5g)  密码 <
 
 在做好了文件管理的步骤之后，才算是开始了正式的图片处理工作。
 
-![](https://ws3.sinaimg.cn/large/006tNbRwgy1fwvgtstvn9j31ao0tmdng.jpg)
+##### 导入及筛选
 
-此处为 Lightroom Classic 2018 的加载画面。
+![Lightroom Loading Page](https://ws3.sinaimg.cn/large/006tNbRwgy1fwvgtstvn9j31ao0tmdng.jpg)
+
+Lightroom Classic 2018 的加载画面，加载完成会进入 Lightroom 主界面。
+
+![](https://ws3.sinaimg.cn/large/006tNbRwgy1fwvh1r1nqnj31kw0zk1gv.jpg)
+
+进入主界面之后右上角有两个页面切换键，**图库 Library** 和 **修改照片 Develop**，右键点击这两个标签我们可以隐藏其余的 **地图 Map** 等选项，其中 **图库** 是用来浏览所有照片的窗口，在其中导入了照片之后，我通常会在这里将所有大片浏览一遍，将可用的照片标记出来，进行简单的设置以及打分。
+
+左侧边栏的文件夹选项可以点击 `+` 图标添加我们整理好的文件夹导入我们的照片，也可以在 `RAW -GH5S` 文件夹处点击右键，选择同步文件夹，都可以添加新的照片。
+
+右侧边栏显示了直方图，快速修改照片，元数据等选项，我们可以点击色调控制的 **自动** 按钮来调整照片的亮度，如果是 RAW 还可以更改白平衡设置，使得所有照片达到一个相对平衡的水平。
+
+中间的图片过滤器展示了所有的照片，在这里我们可以切换网格视图 ( 快捷键 `G` ) 与放大视图（ 快捷键 `E` ) ，点击
 
 
-
-在左下角
 
 1. 粗略调整以及Rating
 2. 修图
