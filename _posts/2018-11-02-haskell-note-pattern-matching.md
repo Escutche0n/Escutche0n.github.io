@@ -28,11 +28,11 @@ Lines in a definition follow the same structure: name of function, inputs that y
 The above example shows pattern matching directly on constructor key words (in this case `True` or `False`) however you can also use the LHS of the equals to name the various input parameters so that you can refer to them easily on the RHS of the defintion where you will actually compute stuff with them. These are just names, you can chose any names you want.
 
 ```haskell
-add :: Num a => a -> a -> a
-add x y = x + y
+    add :: Num a => a -> a -> a
+    add x y = x + y
 
-plus :: Num a => a -> a -> a
-plus water melon = water + melon
+    plus :: Num a => a -> a -> a
+    plus water melon = water + melon
 ```
 
 The above two functions do exactly the same thing, the only difference is that `add` uses more succinct and mathematical lables for the two inputs whereas plus is more fun and random. We like super short variable names because it’s far easier to type short things.
@@ -40,15 +40,15 @@ The above two functions do exactly the same thing, the only difference is that `
 One pattern match that you will do so much that it will almost become part of your being is pattern matching on lists. Recall that lists have two constructors: `[ ]` and `(:)`. Since when you pattern match you always start with the base case the first line of a pattern match on lists will normally be telling the function what to do when it is given the empty list. The next line will say what to do with the rest of the list.
 
 ```haskell
-sum :: Num a => [a ] -> a
-sum [ ]      = 0
-sum (x : xs) = x + sum xs
+    sum :: Num a => [a ] -> a
+    sum [ ]      = 0
+    sum (x : xs) = x + sum xs
 ```
 
 Hopefully the first line of the definition makes sense. sum is being told to return 0 if it is given `[ ]` as its input since well the sum of nothing is nothing. The second line is a little odd the first time you see it. `(x : xs)` just represents a list where you have called the first item `x` and the rest of the items `xs` so you can easily tell the function to add the first item to the sum of the rest of the items. Remember `x` and `xs` are just names. You could still write whatever you want, for example:
 
 ```haskell
-sum (first : rest) = first + sum rest
+    sum (first : rest) = first + sum rest
 ```
 
 Notice how `(x : xs)` is in brackets? This is so that the compiler can type check your pattern matching and know that `x : xs` is only refering to the **first parameter** of the function, something that will become more important when you progress to pattern matching on more than one input.
@@ -56,10 +56,10 @@ Notice how `(x : xs)` is in brackets? This is so that the compiler can type chec
 One final trick that you may see people use is the **underscore**. When naming inputs if there is an input that you don’t care about and don’t need to name since you are not doing to use it on the RHS you can just put an underscore as a place holder.
 
 ```Haskell
-take :: Int -> [a] -> [a]
-take [ ] = [ ]
-take 0 = [ ]
-take n (x : xs) = x : (take (n − 1) xs)
+    take :: Int -> [a] -> [a]
+    take [ ] = [ ]
+    take 0 = [ ]
+    take n (x : xs) = x : (take (n − 1) xs)
 ```
 
 `take` is a function that takes in an `Int`, and a `list`, and produces a list, basically it plucks the first `n` elements of the inputted list and places then in the new list. The definiton of `take` is a good example of using the underscore. If `n = 0` we don’t care what the list is since we know that we are just going to return the empty list. Same with if the inputted list is empty. It doesn’t matter what `n` is since there is nothing to take from anyway.
@@ -69,10 +69,10 @@ take n (x : xs) = x : (take (n − 1) xs)
 When you want to inspect the value of an input instead of just pattern matching on its constructors you should use guards.
 
 ```haskell
-compare :: Eq a => a -> a -> String
-compare x y
-    | x ≡ y = "They are the same!"
-    | otherwise = "Different"
+    compare :: Eq a => a -> a -> String
+    compare x y
+        | x ≡ y = "They are the same!"
+        | otherwise = "Different"
 ```
 
 So the syntax. As ever you put the name of the function so that it knows this part of the definition is for it. Then you give names to the parameters you are taking in, here we have just called them `x` and `y`. Unlike pattern matching you don’t then have an equals, instead you go to a newline and place a guard `|`. Here we return to the familiar pattern of the LHS of the equals describing the case in which you want the code on the RHS to execute. The LHS can be any logical expression involving your variables you want and each guard represent a different case.
@@ -89,7 +89,6 @@ Sometimes in Haskell you may want to whip up a function on the fly and not bothe
 	feedLlamas = map (λllama -> llama ++ " :-)")
 	feedLlamas ["Adam", "Alessio", "Ibrahim", "Jamie", "Charlie"]
 	= ["Adam :-)", "Alessio :-)", "Ibrahim :-)", "Jamie :-)", "Charlie :-)"]
-
 ```
 
 The above is an example of how you could use llambdas to make a helper function. All this function is doing is taking in a list of `Strings` (or `Llamas`) and appending similie faces to each String to create `HappyLlamas`! It does this by mapping (`λllama -> llama ++ " :-)"`) across the initial list (`map` is just a function that applies a function to each element in a list). I could easily have created and named this function like so:
@@ -143,7 +142,7 @@ The normal case will always be more difficult and you won’t be able to get the
 Don’t worry if that doesn’t make sense. It is much easier to show you through example. Lets prove the following statement `∀ n > 0`:
 
 ```haskell
-take n (map f xs) = map f (take n xs)
+	take n (map f xs) = map f (take n xs)
 ```
 
 Intuitively this makes sense. For example if f was `(+2)`: adding two to a whole list, then selecting `n` elements from that list is the same as selecting n elements from the inital list then adding two to these.
@@ -180,7 +179,7 @@ All that I have done is copied the statement we want to prove with `[]` instead 
 Now we must prove our statement for the case (x : xs):
 
 ```
-take n (map f (x : xs)) = { definition map }
+	take n (map f (x : xs)) = { definition map }
 ```
 
 take n (map f (x : xs)) = { definition take } (f x : take (n − 1) (map f xs)) = { induction hypothesis } (f x : map f (take (n − 1) xs)) = { definition map } map f (x : (take (n − 1) xs)) = { definition take } map f (take n (x : xs)) This stage is done in exactly the same way except we now have an extra substitution that we can make. We can use the induction hypothesis! This means that if at any point if we have an expression in the form (take n (map f xs)) we can swap it our for (map f (take n xs)) or vice versa, in the example proof the IH happens when n = (n − 1) which is perfectly valid. Clearly we couldn’t have used this immediately due to the presence of the x before the xs. Since we have now isolated the smaller case of xs we can use the IH because induction is based on assuming something for a smaller csse making the bigger case true.
