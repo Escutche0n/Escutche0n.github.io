@@ -52,6 +52,7 @@ VSCO Film [百度云](https://pan.baidu.com/s/1jxJdsC1nk_JQn31ZnbDR5g)  密码 <
 
 在做好了文件管理的步骤之后，才算是开始了正式的图片处理工作。
 
+
 ##### 导入及筛选
 
 ![Lightroom Loading Page](https://ws3.sinaimg.cn/large/006tNbRwgy1fwvgtstvn9j31ao0tmdng.jpg)
@@ -70,6 +71,7 @@ Lightroom Classic 2018 的加载画面，完成后进入 Lightroom 主界面。
 
 ![](https://ws3.sinaimg.cn/large/006tNbRwgy1fwvokrvkluj31kw0zkwzr.jpg)
 
+
 ##### 使用预设
 
 在完成了图片的修饰工作之后，开始修改照片。
@@ -78,13 +80,13 @@ Lightroom Classic 2018 的加载画面，完成后进入 Lightroom 主界面。
 
 ![VSCO 05](https://drh1.img.digitalriver.com/DRHM/Storefront/Company/vsco/images/product/detail/05_PPD%20Hero_2x.jpg)
 
+
 ##### 调整基本参数和色调曲线
 
 这张图中我选择的是 **Kodak Gold 100 + Soft Highs**，在 **裁剪** 至 4:5 之后轻微调整了**曝光 Exposure**、**高光 Highlights**、**阴影 shadows**、**污点去除工具** 等参数。
 
 ![](https://ws3.sinaimg.cn/large/006tNbRwgy1fwvrl1z8nvj31kw0zk1kx.jpg)
 
-ik pm
 
 ##### 引导式变换
 
@@ -94,7 +96,7 @@ ik pm
 
 - HSL / 颜色 ：在人像片中肤色调教时需要对 **橙色** 进行特别的矫正。
 - 细节：在需要的时候适当 **锐化 **和 **降噪** 。
-- 镜头校正：除松下外主流镜头均有 **配置文件**（包括  iPhone） 以矫正镜头自带暗角与畸变。
+- 镜头校正：除松下外主流镜头均有 **配置文件** (包括 iPhone) 以矫正镜头自带暗角与畸变。
 
 在变幻一栏中选择 **引导式变换** ，此时可以在照片中确定四条纵横标准线，我选择的分别是左边的路灯，右边吊塔到桥上，中间市政厅，以及马路左右。选择相对距离较远的两对标准线可以让画面更有 “**正**” 的感觉，从而得到一张完美构图的照片。
 
