@@ -74,11 +74,23 @@ Lightroom Classic 2018 的加载画面，完成后进入 Lightroom 主界面。
 
 在完成了图片的修饰工作之后，开始修改照片。
 
-首先选择合适的预设，我个人偏爱的是 VSCO 05 ( Archetype Films ) 系列的 **Kodak Gold 100** 预设。
+首先选择合适的预设，我个人偏好 VSCO 05 ( Archetype Films ) 系列的 **Kodak Gold 100** 预设。
 
 ![VSCO 05](https://drh1.img.digitalriver.com/DRHM/Storefront/Company/vsco/images/product/detail/05_PPD%20Hero_2x.jpg)
 
-##### 照片剪裁
+##### 调整基本参数和色调曲线
+
+这张图中我选择的是 **Kodak Gold 100 + Soft Highs**，在 **裁剪** 至 4:5 之后轻微调整了**曝光 Exposure**、**高光 Highlights**、**阴影 shadows**、**[污点去除工具][id]** 等参数。
+
+
+
+
+
+[^id]: Fsa
+
+Lightroom 内的污点去除工具类似简易版的
+
+![](https://ws3.sinaimg.cn/large/006tNbRwgy1fwvrl1z8nvj31kw0zk1kx.jpg)
 
 ik pm
 
