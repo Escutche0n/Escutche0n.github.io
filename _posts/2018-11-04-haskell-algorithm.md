@@ -12,11 +12,24 @@ tags:
     - 算法
 ---
 
-### 常见排序算法 - Haskell
+### Haskell 常见排序算法
+
+##### Insert Sort 插入排序
+
+```haskell
+	insert :: Ord a => a -> [a] -> [a]
+	insert x (y:ys)
+		| x < y     = x : y : ys
+		| otherwise = y : x : ys
+		
+	insertsort :: Ord a => [a] -> [a]
+	insertsort [] = []
+	insertsort (x:xs) = insert x (insertsort xs)
+```
 
 
 
-##### Bubble Sort
+##### Bubble Sort 冒泡排序
 
 ```haskell
 	bubblesort :: Ord a => [a] -> [a]
@@ -34,7 +47,7 @@ tags:
 
 
 
-##### Quick Sort
+##### Quick Sort 快速排序
 
 ```haskell
 	quicksort :: Ord a => [a] -> [a]
@@ -46,7 +59,7 @@ tags:
 
 
 
-##### Merge Sort
+##### Merge Sort 归并排序
 
 ```haskell
 	mergesort :: Ord a => [a] -> [a]
@@ -55,12 +68,9 @@ tags:
 	mergesort xs  = merge (mergesort ys)(mergesort zs) where
 		(ys,zs) = splitAt (length xs 'div' 2) xs
 
-	merge []     ys     = ys
-    merge xs     []     = xs
+	merge [] ys = ys
+    merge xs [] = xs
     merge (x:xs) (y:ys)
-      | x <= y     = x : merge xs (y:ys)
-      | otherwise  = y : merge (x:xs) ys
+      | x <= y    = x : merge xs (y:ys)
+      | otherwise = y : merge (x:xs) ys
 ```
-
-
-
