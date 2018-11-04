@@ -72,12 +72,17 @@ Lightroom Classic 2018 的加载画面，完成后进入 Lightroom 主界面。
 
 ##### 修改照片
 
-在完成了图片的修饰工作之后，开始修改照片。首先选择一套合适的滤镜，我个人偏爱的是 Archetype Films 系列的 Kodak Gold 100 系列预设。
+在完成了图片的修饰工作之后，开始修改照片。
 
-1. 套用滤镜
-2. HSL
-3. 引导式变换
-4. 启用配置文件
+###### 使用预设
+
+首先选择一套合适的滤镜，我个人偏爱的是 VSCO 05 ( Archetype Films 系列的 Kodak Gold 100 预设。
+
+![https://drh1.img.digitalriver.com/DRHM/Storefront/Company/vsco/images/product/detail/05_PPD%20Hero_2x.jpg](https://drh1.img.digitalriver.com/DRHM/Storefront/Company/vsco/images/product/detail/05_PPD%20Hero_2x.jpg)
+
+1. HSL
+2. 引导式变换
+3. 启用配置文件
 
 1. 选定JPG导出
 
