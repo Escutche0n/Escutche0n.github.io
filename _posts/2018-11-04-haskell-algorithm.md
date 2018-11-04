@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      常见算法排序 Haskell
+title:      Haskell 常见算法排序
 subtitle:   Alogrithms in Haskell
 date:       2018-11-04
 author:     "EC"
