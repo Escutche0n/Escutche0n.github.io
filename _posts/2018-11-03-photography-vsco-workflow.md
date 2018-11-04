@@ -70,7 +70,7 @@ Lightroom Classic 2018 的加载画面，完成后进入 Lightroom 主界面。
 
 ![](https://ws3.sinaimg.cn/large/006tNbRwgy1fwvokrvkluj31kw0zkwzr.jpg)
 
-##### 修改照片
+#### 修改照片
 
 在完成了图片的修饰工作之后，开始修改照片。
 
