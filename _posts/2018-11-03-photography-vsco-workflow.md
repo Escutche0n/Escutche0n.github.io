@@ -94,7 +94,7 @@ ik pm
 
 - HSL / 颜色 ：在人像片中肤色调教时需要对 **橙色** 进行特别的矫正。
 - 细节：在需要的时候适当 **锐化 **和 **降噪** 。
-- 镜头校正：除松下外主流厂商均有 **配置文件**（包括 Apple 、DJI 等） 以矫正镜头自带暗角与畸变。
+- 镜头校正：除松下外主流镜头均有 **配置文件**（包括  iPhone） 以矫正镜头自带暗角与畸变。
 
 在变幻一栏中选择 **引导式变换** ，此时可以在照片中确定四条纵横标准线，我选择的分别是左边的路灯，右边吊塔到桥上，中间市政厅，以及马路左右。选择相对距离较远的两对标准线可以让画面更有 “**正**” 的感觉，从而得到一张完美构图的照片。
 
@@ -102,9 +102,17 @@ ik pm
 
 ![](https://ws1.sinaimg.cn/large/006tNbRwgy1fwvsrrojzaj31kw0zk1kx.jpg)
 
-1. 选定JPG导出
+
+
+##### 导出照片
+
+最后选定需要的图片，选定图像格式 `JPEG` 和色彩空间 `sRGB` 导出，我通常会限制文件大小为 500KB 并用 Image Optim 压缩以方便 web 传播。
+
+![](https://ws2.sinaimg.cn/large/006tNbRwgy1fwvt46w9vzj31kw0whgri.jpg)
 
 ---
+
+![](https://ws1.sinaimg.cn/large/006tNbRwgy1fwvtao9zlgj31kw0zk1kx.jpg)
 
 ### 结语
 
