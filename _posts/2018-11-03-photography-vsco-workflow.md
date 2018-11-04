@@ -80,13 +80,15 @@ Lightroom Classic 2018 的加载画面，完成后进入 Lightroom 主界面。
 
 ##### 调整基本参数和色调曲线
 
-这张图中我选择的是 **Kodak Gold 100 + Soft Highs**，在 **裁剪** 至 4:5 之后轻微调整了**曝光 Exposure**、**高光 Highlights**、**阴影 shadows**、**[污点去除工具][id]** 等参数。
+这张图中我选择的是 **Kodak Gold 100 + Soft Highs**，在 **裁剪** 至 4:5 之后轻微调整了**曝光 Exposure**、**高光 Highlights**、**阴影 shadows**、[污点去除工具][id] 等参数。
 
 
 
 
 
-[^id]: Fsa
+[^]: Fs
+
+[]: 	"Fas"
 
 Lightroom 内的污点去除工具类似简易版的
 
