@@ -14,10 +14,6 @@ tags:
     - VSCO Film
 ---
 
-[TOC]
-
-
-
 ### Intro
 
 今天写一篇关于如何使用 Lightroom 以及 VSCO Film 系列胶片滤镜的流程，希望大家喜欢。需要用到的工具为 Windows / Mac 版本的 Photoshop Lightroom Classic CC (之后简称 **Lightroom** )，以及一套 **VSCO Film** (或你喜爱的) 滤镜。
