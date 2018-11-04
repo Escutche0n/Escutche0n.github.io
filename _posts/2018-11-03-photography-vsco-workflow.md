@@ -9,7 +9,7 @@ catalog: true
 comments: true
 tags:
     - 摄影
-    - 工作流
+    - 后期
     - Lightroom
     - VSCO Film
 ---
@@ -115,4 +115,6 @@ Lightroom Classic 2018 的加载画面，完成后进入 Lightroom 主界面。
 
 ### 后记
 
-最后，衷心的祝贺看到文章结尾的各位都能拍到喜欢的照片。
+回顾这篇文章，完全是出于个人的兴趣。
+
+最后，如果你恰好逛到了这里，希望你也能得到自己喜欢的照片。
