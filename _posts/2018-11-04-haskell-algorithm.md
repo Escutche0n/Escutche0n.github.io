@@ -77,4 +77,4 @@ tags:
 
 
 
-<iframe width="560" height="315" src="https://escutche0n.github.io/counts" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://escutche0n.github.io/counts" frameborder="0" allowfullscreen zoom="50%" ></iframe>
