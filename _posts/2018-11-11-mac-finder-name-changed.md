@@ -8,13 +8,14 @@ header-img: "img/post-bg-mac.jpg"
 catalog: true
 comments: true
 tags:
-    - OS X
+    - macOS
 ---
 
-会变成中文名的文件夹下都有一个.localized的文件，如果你不小心删掉了就会出现变成英文的情况，解决方法如下：
+会变成中文名的文件夹下都有一个 `.localized` 的文件，如果不小心删掉了就会出现变成英文的情况，解决方法如下：
 
 ```bash
 	cd desktop	
 	touch .localized
 	killall finder
 ```
+
