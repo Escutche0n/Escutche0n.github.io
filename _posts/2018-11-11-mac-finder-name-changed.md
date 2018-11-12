@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      OS X 中 Finder 侧边栏的桌面变成 Desktop 的解决办法
+title:      macOS 中 Finder 侧边栏的桌面变成 Desktop 的解决办法
 subtitle:   Reset Localization for Desktop on Finder in OS X
 date:       2018-11-11
 author:     "EC"
