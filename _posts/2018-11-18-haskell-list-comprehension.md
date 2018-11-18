@@ -1,6 +1,7 @@
 ---
 layout:     post
 title:      List Comprehension
+subtitle:   大概是叫列表解析式
 date:       2018-11-18
 author:     "EC"
 header-img: "img/post-abstract-1.jpg"
@@ -35,10 +36,11 @@ tags:
 	squares = [x * x | x <- nats]
 ```
 
-定义名为笛卡尔的函数 `cartesian :: [a] -> [b] -> [(a, b)]`， 其返回值为其两个列表的笛卡尔乘积 (*worksheet 3, 1.2, 1, d*)。
+定义名为笛卡尔的函数 `cartesian :: [a] -> [b] -> [(a, b)]`， 其返回值为其两个列表的笛卡尔数对。
 
 ```haskell
 	cartesian :: [a] -> [b] -> [(a, b)]
 	cartesian xs ys = [(x, y) | x <- xs, y <- ys]
 ```
 
+我们
