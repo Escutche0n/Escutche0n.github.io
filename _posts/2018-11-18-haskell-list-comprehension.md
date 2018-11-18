@@ -15,7 +15,7 @@ tags:
 
 List Comprehension 来源于数学中的集合表达式：
 
-$S=\lbrace 2 \cdot x \vert x \in\mathbb{N} ,x\leq10 \rbrace$
+$$ S=\lbrace 2 \cdot x \vert x \in\mathbb{N} ,x\leq10 \rbrace $$
 
 它的作用是，从 **既有** 的 **集合** 之中按照规则产生新的 **集合**。
 
