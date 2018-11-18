@@ -22,8 +22,8 @@ tags:
 
    ```haskell
    	merge :: [Int] -> [Int] -> [Int]
-   		merge xs [] = xs				-- pattern match base case
-   		merge [] ys = ys				-- pattern match base case
+   		merge xs [] = xs		-- pattern match base case
+   		merge [] ys = ys		-- pattern match base case
    		merge (x:xs) (y:ys)
    			| x <= y 	= x : merge xs (y:ys)
    			| otherwise = y : merge (x:xs) ys
@@ -88,8 +88,9 @@ tags:
    	all p [] =[]
    	all p (x:xs)
    		| p x = x: all p xs
-   		| otherwise = all p xs		-- 帮我问一下 TA 这个对不对
-   									-- [🤦‍我感觉是错的]
+   		| otherwise = all p xs	
+   		-- 帮我问一下 TA 这个对不对
+   		-- [🤦‍我感觉是错的]
    ```
 
    ```haskell
