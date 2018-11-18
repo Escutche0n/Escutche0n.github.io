@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      List Comprehension
-subtitle:   大概是叫列表解析式
+title:      Haskell 中的列表解析式
+subtitle:   List Comprehension in Haskell
 date:       2018-11-18
 author:     "EC"
 header-img: "img/post-abstract-1.jpg"
@@ -10,14 +10,13 @@ comments: true
 guid: urn:uuid:bd69ccfc-e840-4bc4-99ec-54cefac7f749
 tags:
     - Haskell
-    - 笔记
 ---
 
 List Comprehension 来源于数学中的集合表达式：
 
 $$ S=\lbrace 2 \cdot x \vert x \in\mathbb{N} ,x\leq10 \rbrace $$
 
-它的作用是，从 **既有** 的 **集合** 之中按照规则产生新的 **集合**。
+它的作用是，从 **既有** 的 **集合** 之中 **按照规则** 产生新的 **集合**。
 
 例如从无限长列表中提取前十个偶数：
 
