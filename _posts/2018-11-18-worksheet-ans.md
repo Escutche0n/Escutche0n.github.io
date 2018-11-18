@@ -12,7 +12,7 @@ tags:
     - Haskell
 ---
 
-#### Worksheet 3
+### Worksheet 3
 
 ###### Pattern Matching
 
@@ -60,7 +60,7 @@ tags:
 
 ------
 
-#### Worksheet 4
+### Worksheet 4
 
 ###### Folding
 
@@ -100,7 +100,7 @@ tags:
 
 -----
 
-#### Worksheet 5
+### Worksheet 5
 
 ###### Type Classes
 
