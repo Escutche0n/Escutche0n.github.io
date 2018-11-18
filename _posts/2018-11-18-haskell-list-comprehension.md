@@ -46,4 +46,10 @@ $$ S=\lbrace 2 \cdot x \vert x \in\mathbb{N} ,x\leq10 \rbrace $$
 	cartesian xs ys = [(x, y) | x <- xs, y <- ys]
 ```
 
-我们
+我们也可以用它来求一个列表的长度
+
+```haskell
+	length' = sum[1| _ <- xs] 	-- 计算 xs 转化为单个列表元素的数量
+								-- 即为列表的长度
+```
+
