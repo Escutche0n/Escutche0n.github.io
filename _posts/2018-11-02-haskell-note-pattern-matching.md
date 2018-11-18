@@ -7,6 +7,7 @@ author:     "EC"
 header-img: "img/post-abstract-2.jpg"
 catalog: true
 comments: true
+guid: urn:uuid:bd69ccfc-e840-4bc4-99ec-54cefac7f749
 tags:
     - Haskell
     - 笔记
