@@ -12,10 +12,6 @@ tags:
     - Haskell
 ---
 
-List Comprehension 来源于数学中的集合表达式：
-
-$$ S=\lbrace 2 \cdot x \vert x \in\mathbb{N} ,x\leq10 \rbrace $$
-
 它的作用是，从 **既有** 的 **集合** 之中 **按照规则** 产生新的 **集合**。
 
 例如从无限长列表中提取前十个偶数：
@@ -45,10 +41,9 @@ $$ S=\lbrace 2 \cdot x \vert x \in\mathbb{N} ,x\leq10 \rbrace $$
 	cartesian xs ys = [(x, y) | x <- xs, y <- ys]
 ```
 
-我们也可以用它来求一个列表的长度
+我们也可以用它来求一个列表的长度：
 
 ```haskell
-	length' = sum[1| _ <- xs] 	-- 计算 xs 转化为单个列表元素的数量
-								-- 即为列表的长度
+	length' = sum[1| _ <- xs] 	-- 计算 xs 转化为单个列表元素的数量即为列表的长度
 ```
 
