@@ -1,11 +1,11 @@
 ---
 layout:     post
-title:      Haskell 中的列表解析式
+title:      Haskell 之列表解析式
 subtitle:   List Comprehension in Haskell
 date:       2018-11-18
 author:     "EC"
 header-img: "img/post-abstract-1.jpg"
-catalog: true
+catalog: false
 comments: true
 guid: urn:uuid:bd69ccfc-e840-4bc4-99ec-54cefac7f749
 tags:
