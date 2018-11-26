@@ -30,9 +30,9 @@ Eager Evaluation & Lazy Evaluation
 
 > 给定一个类型 **`τ`**，是否存在一个 **`λ-`** 项 **`M`** 使得对于某个类型环境 **`Γ`** 有 **`Γ ⊢ M :  τ`** (其意味着 **`M`** 在上下文 `Γ` 中是 **`τ`** 的一项) ？如果回答是肯定的，则 **M** 被称为 **τ** 的 **居民 inhabitant**。
 
-简单的来讲，一个类型的 **inhabitant** 就是一个这个类型的**值**，例如 `\x -> x+1` (对应数学的 `f (x) = x + 1` )就是 `Int -> Int` 类型中的一个 **inhabitant**。学霸口中的 "type inhabitants" 和学渣说的 "values of that type" 大概是一回事，下文中我均以 " ***居民*** " 代替 ***inhabitant*** (s) 。
+简单的来讲，一个类型的 **inhabitant** 就是一个这个类型的**值**，例如 `\x -> x+1` (对应数学的 `f (x) = x + 1` )就是 `Int -> Int` 类型中的一个 **inhabitant**。学霸口中的 "type inhabitants" 和学渣说的 "values of that type" 大概是一回事，下文中我均以 ***居民*** 代替 ***inhabitant*** (s) 。
 
-居民的数量 则是一个类型数据中 **拥有的所有居民的数量总和**，其中 bottoms **`⊥`**[^2] 忽略不计。
+**居民的数量** 则是一个类型数据中 **拥有的所有居民的数量总和**，其中 bottoms **`⊥`**[^2] 忽略不计。
 
 如果 `data Unit = Unit` 指的是其有一个居民因为它只可能有一种值，那 `Bool` 就应该有两个居民，分别为 `True` 和 `False`。
 
@@ -40,7 +40,7 @@ Eager Evaluation & Lazy Evaluation
 
 如果是 `Either` 的话二者选其一，则是两者相加即`|a| + |b|` 种组合。
 
-而空函数 Void 根据其定义 `data Void` 没有居民，值得注意的是它在 Haskell 中 **不是** 一个<u>有效</u>的数据类型。
+而空函数 `Void` 根据其定义 `data Void` 没有居民，值得注意的是它在 Haskell 中 **并非** 一个<u>有效</u>的数据类型。
 
 
 
