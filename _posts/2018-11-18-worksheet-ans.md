@@ -76,7 +76,57 @@ tags:
 7. (a)
 
    ```haskell
-   	
+   	-- Nothing. Totally not related.
+   ```
+
+   (b)
+
+   ```haskell
+   	-- f and g are equal. Because both of them are undefined which are obviously the same.
+   ```
+
+8. 
+
+   ```haskell
+   	choose :: Bool -> a -> b -> c
+   	choose True x _ = x
+   	choose False _ y = y
+   ```
+
+###### Evaluation
+
+1. `twice square 3`
+
+   ```haskell
+   	twice square 3						twice square 3
+   = { def twice }						= { def twice }
+   	square (square 3)					square (square 3)
+   = { def square }					= { def square }
+   	(square 3) * (square 3)				square (3 * 3)
+   = { def square }					= { def (*) }
+   	(3 * 3) * (square 3)				square	9
+   = { def (*) }						= {	def square}
+   	9 * (square 3)						9 * 9
+   = { def square }					= { def (*) }
+   	9 * ( 3 * 3 )						81
+   = { def (*) }
+   	9 * 9
+   = { def (*)}
+   	81
+   ```
+
+2. `square (const 3 infinity)`
+
+   ```haskell
+   	square ( const 3 inf)				square (const 3 inf)
+   = { def square }					= { def inf }
+   	(const 3 inf) * (const 3 inf)		square (const 3 (1 + inf))
+   = { def const }						= { def inf }
+   	3 * (const 3 inf)					square (const 3 (1 + (1 + inf)))
+   = { def const }						...
+   	3 * 3							= bottom
+   = { def (*) }
+   	9
    ```
 
 
