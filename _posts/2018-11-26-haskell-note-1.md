@@ -24,13 +24,15 @@ Eager Evaluation & Lazy Evaluation
 
 当某一级无法继续推进的时候则先算下一级。
 
-### 居民数量问题
+### 居民数量问题 The Number Inhabitants
 
-**类型居留问题 (Type inhabitation)** 是如下问题：
+根据维基百科，**类型居留问题 (Type inhabitation)** 是这样的：
 
-给定一个类型 **`τ`**，是否存在一个 **`λ-`** 项 **`M`** 使得对于某个类型环境 **`Γ`** 有 **`Γ ⊢ M :  τ`** (其意味着 **`M`** 在上下文 `Γ` 中是 **`τ`** 的一项) ？如果回答是肯定的，则 **M** 被称为 **τ** 的 **居民 inhabitant**[^1]。
+> 给定一个类型 **`τ`**，是否存在一个 **`λ-`** 项 **`M`** 使得对于某个类型环境 **`Γ`** 有 **`Γ ⊢ M :  τ`** (其意味着 **`M`** 在上下文 `Γ` 中是 **`τ`** 的一项) ？如果回答是肯定的，则 **M** 被称为 **τ** 的 **居民 inhabitant**[^1]。
 
-居民的数量 **The number inhabitants** 则是一个类型数据中 **拥有的所有居民的数量总和**，其中 bottoms **`⊥`**[^2] 忽略不计。
+简单的来讲，一个类型的 **inhabitant** 就只是一个这个类型的**值**，例如 `\x -> x+1` (对应数学的 `f (x) = x + 1` )就是 `Int -> Int` 类型中的一个 **inhabitant**。学霸口中的 "type inhabitants" 和学渣说的 "values of that type" 大概是一回事，下文中我均以 " ***居民*** " 代替 ***inhabitant*** (s) 。
+
+居民的数量 则是一个类型数据中 **拥有的所有居民的数量总和**，其中 bottoms **`⊥`**[^2] 忽略不计。
 
 如果 `data Unit = Unit` 指的是其有一个居民因为它只可能有一种值，那 `Bool` 就应该有两个居民，分别为 `True` 和 `False`。
 
@@ -39,6 +41,12 @@ Eager Evaluation & Lazy Evaluation
 如果是 `Either` 的话二者选其一，则是两者之和 `|a| + |b|`。
 
 而空函数 Void 根据其定义 `data Void` 没有其居民，可是它在 Haskell 中 **不是** 一个有效的数据类型。
+
+
+
+https://gist.github.com/pchiusano/444de1f222f1ceb09596
+
+
 
 ----
 [^1]: 摘自 Wikipedia: Type Inhabitation https://en.wikipedia.org/wiki/Type_inhabitation 和其中文版本。
