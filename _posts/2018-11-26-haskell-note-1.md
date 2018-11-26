@@ -28,7 +28,7 @@ Eager Evaluation & Lazy Evaluation
 
 **类型居留问题 (Type inhabitation)** 是如下问题：
 
-给定一个类型 **τ**，是否存在一个 **`λ-`** 项 **`M`** 使得对于某个类型环境 **`Γ`** 有 **`Γ ⊢ M :  τ`** (其意味着 **`M`** 在上下文 `Γ` 中是 `τ` 的一项) ？如果回答是肯定的，则 **M** 被称为 **τ** 的 **居民 inhabitant**[^1]。
+给定一个类型 **`τ`**，是否存在一个 **`λ-`** 项 **`M`** 使得对于某个类型环境 **`Γ`** 有 **`Γ ⊢ M :  τ`** (其意味着 **`M`** 在上下文 `Γ` 中是 **`τ`** 的一项) ？如果回答是肯定的，则 **M** 被称为 **τ** 的 **居民 inhabitant**[^1]。
 
 居民的数量 **The number inhabitants** 则是一个类型数据中 **拥有的所有居民的数量总和**，其中 bottoms **`⊥`**[^2] 忽略不计。
 
@@ -41,6 +41,6 @@ Eager Evaluation & Lazy Evaluation
 而空函数 Void 根据其定义 `data Void` 没有其居民，可是它在 Haskell 中 **不是** 一个有效的数据类型。
 
 ----
-[^1]: https://en.wikipedia.org/wiki/Type_inhabitation
-[^2]: 未定义的值 即 undefined value
+[^1]: 摘自 Wikipedia: Type Inhabitation https://en.wikipedia.org/wiki/Type_inhabitation 和其中文版本。
+[^2]: 未定义的值 即 undefined value。
 
