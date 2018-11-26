@@ -2,7 +2,7 @@
 layout:     post
 title:      Haskell 学习笔记 1
 subtitle:   Haskell Note 1 - Data Type, Evaluation and Inhabitants
-date:       2018-11-18
+date:       2018-11-26
 author:     "EC"
 header-img: "img/post-abstract-1.jpg"
 catalog: true
@@ -22,9 +22,9 @@ tags:
 
 给定一个类型 **τ**，是否存在一个 **`λ-`** 项 **`M`** 使得对于某个类型环境 **`Γ`** 有 **`Γ ⊢ M :  τ`** (其意味着 **`M`** 在上下文 `Γ` 中是 `τ` 的一项) ？如果回答是肯定的，则 **M** 被称为 **τ** 的 **居民 inhabitant**[^1]。
 
-居民的数量 **The number inhabitants** 则是一个类型数据中拥有的所有居民的数量总和，其中 bottoms **`⊥`**[^2] 忽略不计。
+居民的数量 **The number inhabitants** 则是一个类型数据中 **拥有的所有居民的数量总和**，其中 bottoms **`⊥`**[^2] 忽略不计。
 
-如果 `data Unit = Unit` 指的是其有一个居民因为它只可能有一种值，那 `Bool` 就应该有两个 inhabitants，分别为 `True` 和 `False`。
+如果 `data Unit = Unit` 指的是其有一个居民因为它只可能有一种值，那 `Bool` 就应该有两个居民，分别为 `True` 和 `False`。
 
 以此类推，一个二元组 `(a, b)` 包含了一对 a 类数据 及 b 类数据，其中 a 类数据有 `|a|` 个居民，b 类数据有 `|b|` 个居民，其两两相合会有 `|a| * |b|` 种组合，即 `(a, b)` 的居民数量为 `|a| * |b|`。
 
