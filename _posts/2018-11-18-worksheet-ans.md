@@ -12,6 +12,74 @@ tags:
     - Haskell
 ---
 
+### Worksheet 1
+
+###### Guess the type
+
+1. Assign one of the primitive datatype to:
+
+   ```haskell
+   	cloudCloud :: Float
+   ```
+
+2. Give the type definition for square:
+
+   ```haskell
+   	square :: Num a => a -> a
+   ```
+
+3. Give the type definition for trafficLight where we have created our own data types.
+
+   ```haskell
+   	trafficLight :: [Colour]
+   ```
+
+4. Let:
+
+   **(a)** Give the type definitions for `takeAway` and `subtract`.
+
+   ```haskell
+   	takeAway :: Num a => (a, a) -> a
+   	subtract :: Num a => a -> a -> a
+   ```
+
+   **(b)** Redefine `subtract` using `takeAway`.
+
+   ```haskell
+   	subtract = curry takeAway
+   ```
+
+   **(c)**
+
+   ```haskell
+   	map (takeAway [x y| x <- [1, 2, 3]])
+   	map ( curry takeAway 3) [1, 2, 3]
+   ```
+
+5. Give the types:
+
+   ```haskell
+   	deception 	:: [[[a]]]
+       mysterious 	:: ()
+   ```
+
+6. Gives the type signatures of the following functions.
+
+   ```haskell
+   	map :: (a -> b) -> [a] -> [b]
+   ```
+
+   ```haskell
+   	zip :: [a] -> [b] -> [(a, b)]
+   ```
+
+7. (a)
+
+   ```haskell
+   	
+   ```
+
+
 ### Worksheet 3
 
 ###### Pattern Matching
