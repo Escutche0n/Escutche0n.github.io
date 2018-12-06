@@ -15,15 +15,17 @@ tags:
 <p style="color: grey;font-family: Avenir;font-weight:600;">
     Note 10/01, Week 1 Lecture 1 (1)
 </p>
-
-# Functional Programming
+<p style="font-size: 2em;font-family: Avenir;font-weight:600;text-align: center">
+    Functional Programming
+</p>
 
 <div id="top">
 <blockquote>
-    The <a href="#Lecture03">purpose</a> of abstraction is not to be vague, but to create a new semantic level in which one can be <em>absolute</em> <b>precise</b>.
+    The <a href="#LC03">purpose</a> of abstraction is not to be vague, but to create a new semantic level in which one can be <em>absolute</em> <b>precise</b>.
 </blockquote>
 <p style="text-align: right"> - Edsker Dijkstra</p>
 </div>
+
 **Functional Programming** is about programming with *values* rather than *statements*.
 
 It encourages code that is:
@@ -185,9 +187,10 @@ This return 2 regardless of the input. `two 5 = 2` `two undefined = 2`[^2.3]
 
 ---
 
-<p style="color: grey;font-family: Avenir;font-weight:600;">
+<p id="LC03" style="color: grey;font-family: Avenir;font-weight:600;">
     Note 10/05, Week 1 Lecture 3 (3)
 </p>
+
 
 We can combine functions by applying one followed by the other.
 
