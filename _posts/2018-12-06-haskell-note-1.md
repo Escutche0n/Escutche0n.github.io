@@ -16,7 +16,7 @@ tags:
     Note 10/01, Week 1 Lecture 1 (1)
 </p>
 
-# Functional Programming 2018
+# Functional Programming
 
 <div id="top">
 <blockquote>
