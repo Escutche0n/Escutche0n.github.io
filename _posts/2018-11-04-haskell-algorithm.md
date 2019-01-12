@@ -17,15 +17,17 @@ tags:
 
 ##### Insert Sort 插入排序
 
+
+
 ```haskell
+	insertsort :: Ord a => [a] -> [a]
+	insertsort [] = []
+	insertsort (x:xs) = insert x (insertsort xs)
+	
 	insert :: Ord a => a -> [a] -> [a]
 	insert x (y:ys)
 		| x < y     = x : y : ys
 		| otherwise = y : x : ys
-		
-	insertsort :: Ord a => [a] -> [a]
-	insertsort [] = []
-	insertsort (x:xs) = insert x (insertsort xs)
 ```
 
 
