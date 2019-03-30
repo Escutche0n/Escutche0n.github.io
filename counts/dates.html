@@ -16,7 +16,7 @@
             margin: 0;
             height: 100%;
             font-size: 85%;
-            background-color: pink;
+            background-color: blue;
             /* background-size: cover; */
         }
         
@@ -48,7 +48,7 @@
 
 <body>
     <div class="content">
-        <h2>傻粥，我们已经在一起了</h2>
+        <h2>傻粥，我们已经认识了了</h2>
         <div class="timer">
             <b id="d"></b> 天 <b id="h"></b> 小时 <b id="m"></b> 分 <b id="s"></b> 秒
         </div>
@@ -56,7 +56,7 @@
 
     <script>
         function timer() {
-            var start = new Date(2018, 8, 26); // 2015.7.2
+            var start = new Date(2018, 6, 12); // 2015.7.2
             var t = new Date() - start;
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
