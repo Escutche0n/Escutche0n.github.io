@@ -86,9 +86,9 @@ service-worker: true
 
 
 # Friends
-friends: [
-    {
-        title: "和Google君做朋友要从娃娃抓起",
-        href: "https://www.google.com"
-    }
-]
+# friends: [
+#     {
+#         title: "和Google君做朋友要从娃娃抓起",
+#         href: "https://www.google.com"
+#     }
+# ]
