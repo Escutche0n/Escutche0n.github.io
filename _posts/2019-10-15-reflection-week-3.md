@@ -12,7 +12,7 @@ tags:
     - Innovation
 ---
 
-# Reflections on TD2 Week 3
+
 
 ### David Jones's Second Year Tips
 

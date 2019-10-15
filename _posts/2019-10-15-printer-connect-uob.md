@@ -15,7 +15,7 @@ tags:
 
 
 
-# How to Connect UOB Printers to your MacBook
+
 
 > **Print via email** is available for occasional use.
 >
