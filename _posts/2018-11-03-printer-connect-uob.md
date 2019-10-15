@@ -1,4 +1,4 @@
-# How to Connect Your Mac with UOB Printers
+# 如何将你的Mac连接到学校打印机
 
 > Note for taught students: most personal Mac computers are charged at colour rates for print release, whichever queue they use. We are unable to find a solution at the current time and recommend that student Mac users print from University computers to avoid this cost. [Print via email](https://www.bristol.ac.uk//it-services/applications/printing/printviaemail.html) is available for occasional use.
 
