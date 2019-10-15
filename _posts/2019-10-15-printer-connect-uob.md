@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      How to Connect macOS Catalina to a UOB Printer? 
+title:      How to Connect UOB Printers to a Mac? 
 subtitle:   如何用新版 macOS 连接学校打印机
 date:       2019-10-15
 author:     "Elvis"
@@ -11,7 +11,7 @@ tags:
     - tutorial
 ---
 
-# How to Connect macOS Catalina to a UOB Printer? 
+# How to Connect UOB Printers to a Mac? 
 
 > **Print via email** is available for occasional use.
 >
@@ -43,16 +43,17 @@ disc/Library/Printers/PPDs/Contents/Resources/
 
 ### C. Add the printer to your Mac
 
-1. Open **System Preferences**
-2. Click on **Printers & Scanners**
-3. Click the `+` button to add a new printer
-6. The first time you do this, you need to add the `Advanced` button to the `Printers & Scanners` window. To do so:
+1. Update the latest **macOS**(10.15 Catalina tested).
+2. Open **System Preferences**
+3. Click on **Printers & Scanners**
+4. Click the `+` button to add a new printer
+5. The first time you do this, you need to add the `Advanced` button to the `Printers & Scanners` window. To do so:
 
-  - Hold the **`⌃`** key and **Left click** on the toolbar, next to the **Windows** icon.
-- Select **Customize Toolbar...**
+   - Hold the **`⌃`** key and **Left click** on the toolbar, next to the **Windows** icon.
+   - Select **Customize Toolbar...**
    - Drag the **Advanced** button into the toolbar.
-- Click **Done**
-5. You're now ready to add the printer. To do so:
+   - Click **Done**
+6. You're now ready to add the printer. To do so:
    1. Click **Advanced**
    2. Type: **Windows printer via spoolss**
    3. Device: **Another Device**
@@ -60,8 +61,8 @@ disc/Library/Printers/PPDs/Contents/Resources/
    5. Name: **UoB Print Release**
    6. Location: **UoB**
    7. Use: **Select Software...**
-6. Click the `Add` button to save this printer.
-7. You will be presented with printer customisation options. It is advisable to select duplexing to enable 2-sided printing.
+7. Click the `Add` button to save this printer.
+8. You will be presented with printer customisation options. It is advisable to select duplexing to enable 2-sided printing.
 
 ### D. Authenticate
 
