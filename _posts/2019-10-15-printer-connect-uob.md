@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      How to Connect UOB Printers to your Macbook? 
-subtitle:   如何在 Macbook 上设置学校打印机
+subtitle:   如何在 Macbook 上设置布里斯托大学打印机
 date:       2019-10-15
 author:     "Elvis"
 catalog: true
@@ -22,7 +22,7 @@ tags:
 
 
 
-Note for all users: you will need to choose whether to print in **Black and White** or Colour at the time you are sending your document to the printer. For example, you will need to specify your colour settings via an application such as Preview or Microsoft Word after selecting `File` > `Print`...
+Note for all users: you will need to choose whether to print in **Black and White** or **Colour** at the time you are sending your document to the printer. For example, you will need to specify your colour settings via an application such as Preview or Microsoft Word after selecting `File` > `Print`...
 
 
 
@@ -47,7 +47,7 @@ disc/Library/Printers/PPDs/Contents/Resources/
 1. Update the latest **macOS**(10.15 Catalina tested).
 2. Open **System Preferences**
 3. Click on **Printers & Scanners**
-4. Click the `+` button to add a new printer
+4. Click the **`+`** button to add a new printer
 5. The first time you do this, you need to add the `Advanced` button to the `Printers & Scanners` window. To do so:
 
    - Hold the **`⌃`** key and **Left click** on the toolbar, next to the **Windows** icon.
