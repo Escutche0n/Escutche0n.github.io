@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "How to Connect UOB Printers to your Macbook? "
+title:      How to Connect UOB Printers to your Macbook? 
 subtitle:   "如何在 Macbook 上设置布里斯托大学打印机"
 date:       2019-10-15
 author:     "Elvis"
