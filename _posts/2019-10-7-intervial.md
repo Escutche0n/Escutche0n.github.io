@@ -2,7 +2,7 @@
 layout:     post
 title:      Interval Scheduling
 subtitle:   
-date:       2019-10-05
+date:       2019-10-07
 author:     "EC"
 catalog: true
 comments: true
