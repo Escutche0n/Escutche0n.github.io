@@ -14,6 +14,8 @@ The Print Release queue names are as follows. These are used in the URL field wh
 
 Copy the <a href="https://github.com/Escutche0n/Escutche0n.github.io/raw/master/resources/CNADVC5235X1.PPD.gz">CNADVC5235X1.PPD.gz</a> file corresponding to the printer you are using to the following folder.
 
+HAHAHA
+
 ### C. Add the printer to your Mac
 
 1. Ensure your Mac is fully up to date. To do so:
