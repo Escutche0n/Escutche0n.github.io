@@ -6,7 +6,6 @@ date:       2019-10-20
 author:     "Elvis"
 catalog:    true
 comments:   true
-guid:       urn:uuid:bd69ccfc-e840-4bc4-99ec-54cefac7f749
 tags:
     - Cuncurrency
 	- Go

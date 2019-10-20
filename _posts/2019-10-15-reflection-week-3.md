@@ -7,7 +7,6 @@ author:     "Elvis"
 catalog: true
 comments: true
 header-img: "img/post-bg-innovation.jpg"
-guid: urn:uuid:bd69ccfc-e840-4bc4-99ec-54cefac7f749
 tags:
     - Innovation
 ---
