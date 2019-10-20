@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Towards Concurrent Programming in Go
+title:      Concurrency
 subtitle:   "Concurrency"
 date:       2019-10-20
 author:     "Elvis"
