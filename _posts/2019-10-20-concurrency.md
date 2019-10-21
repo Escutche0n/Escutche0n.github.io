@@ -15,7 +15,7 @@ tags:
 
 
 
-A goroutine is a green thread.
+A goroutine is a [green thread].
 
 
 
