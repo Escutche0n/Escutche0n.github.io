@@ -1,4 +1,19 @@
-# 快速傅里叶变换
+---
+layout:     post
+title:      Fast Fourier Transform 知乎
+subtitle:   "快速傅里叶变换"
+date:       2019-10-12
+author:     "Elvis"
+catalog: true
+comments: true
+guid: urn:uuid:bd69ccfc-e840-4bc4-99ec-54cefac7f749
+tags:
+    - Algorithm
+    - Mathematics
+---
+
+
+# 
 
 ## 前言
 
@@ -21,21 +36,17 @@
 我们在这里引入一个例子：求多项式乘积的朴素算法 (Naive Algorithm)。
 
 <p style="text-align:center">大家平时求</p>
-
 $$
 f(x)=a_1x^2+b_1x+c_1
 $$
 
 <p style="text-align:center">与</p>
-
 $$
 g(x)=a_2x^2+b_2x+c_2
 $$
 
 <p style="text-align:center">的乘积时候是怎么进行的呢？</p>
-
 <p style="text-align:center">我们令</p>
-
 $$
 K(x)=f(x)*g(x)=a_1x^2*a_2x^2+a_1x^2*b_2x+a_1x^2*c_2\\ +b_1x*a_2x^2+b_1x*b_2x+b_1x*c_2+c_1*a_2x^2+c_1*b_2x+c_1*c_2
 $$
