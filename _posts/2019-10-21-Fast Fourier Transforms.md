@@ -50,64 +50,69 @@ $$
 
 - The variable $x$ allows us to evaluate the polynomial at a point:
 
-- Evaluation just means plugging a value into the variable $x$.
+- Evaluation just means **plugging a value** into the variable $x$.
 
 - Forexample $A(3)=a_0\cdot 3 +a_1 ·3 +a_2 ·3 ···+a_{n−1}3^{n-1}$. 
 
-- A fast way to evaluate a polynomial is using Horner’s Rule.
+- A fast way to evaluate a polynomial is using **Horner’s Rule**.
 
   - Instead of computing all the terms individually, we do
 
-  $$
-  A(3) = a_0 +3·(a_1 +3·(a_2 +···+3·(a_n−1)))
-  $$
+$$
+A(3) = a_0 +3·(a_1 +3·(a_2 +···+3·(a_n−1)))
+$$
 
   - This method requires $O(n)$ operations: 
 
 ```pseudocode
 EVALUATE-HORNER(A, n, x)
-
-begin
-	t<-0
-	for i = n − 1 downto 0 step − 1 do
-		t <- (t · x) + ai 
-	return t
-end
+    begin
+      t ← 0
+      for i = n − 1 downto 0 step −1 do
+        t ← (t · x) + ai 
+      return t
+    end
 ```
 
-Example
+**Example**
 
 Consider $A(x) = 2 + 3x + 1 \cdot x^2$ We can evaluate this as  $A(x) = 2 + x(3 + 1\cdot x) $
 
-(List of array)
+
+
+
 
 ### Coefficient Based Polynomial Arithmetic
 
-- Once we have our polynomial representations, we might want to do some arithmetic with them. 
+- Once we have our polynomial representations, we might want to do some **arithmetic** with them. 
 
-- 􏰀  For a coefficient representation, the addition $C = A + B$ constructs $C$ as the vector: 
+- For a coefficient representation, the addition $C = A + B$ constructs $C$ as the vector: 
 
   $$
   (a_0 +b_0,a_1 +b_1,a_2 +b2,...,a_{n−1} +b_{n−1})
   $$
 
-- Strictly speaking, $A$ and $B$ should have the same length but in practice we can just pad with zero coefficients to make this so. 
+- Strictly speaking, $A$ and $B$ should have **the same length** but in practice we can just **pad with zero** coefficients to make this so. 
 
 
 
-##### FACT
+### Point Value Representation of Polynomials (坐标表示多项式)
 
-Given n points(xi,yi),with all $x_i$ distinct, there is a unique polynomial A(x) of degree-bound n such that $y_k$ =A($x_k$)fork = 0,1,...,n−1. 
+> **FACT**
+>
+> Given $n$ points$(x_i,y_i)$,with all $x_i$ distinct, there is a **unique polynomial** $A(x)$ of degree-bound n such that $y_k =A(x_k)$ for $k = 0,1,...,n−1$. 
+
+<img src="/Users/elvischen/Desktop/Screenshot 2019-10-23 at 07.44.50.png" alt="Screenshot 2019-10-23 at 07.44.50" style="zoom:50%;" />
 
 
 
 ### Point Value Polynomial Arithmetic
 
-- For a point-value representation, the addition C = A + B constructs C as: 
+- For a point-value representation, the addition **C = A + B** constructs **C** as: 
 
-  {($x_0,y_0 +z_0$),(x1,y1 +z1),(x2,y2 +z2),...,(xn−1,yn−1 +zn−1)} where xi is a point, yi = A(xi) and zi = B(xi). 
+  $\{(x_0,y_0 +z_0),(x_1,y_1 +z_1),(x_2,y_2 +z_2),...,(x_{n−1},y_{n−1} +z_{n−1})\}$ where $x_i$ is a point, $y_i = A(x_i)$ and $z_i = B(x_i)$. 
 
-- 􏰀  Note that the two point-value representations must use the same evaluation points. 
+- 􏰀  Note that the two point-value representations must use **the same evaluation points**. 
 
 - 􏰀  Both these operations are $O(n)$ in terms of the time they take.
 
@@ -115,74 +120,87 @@ Given n points(xi,yi),with all $x_i$ distinct, there is a unique polynomial A(x)
 
 ### Polynomial Multiplication
 
-- Computing a polynomial multiplication, sometimes called convolution, is a little bit harder than addition. 
+- Computing a polynomial multiplication, sometimes called **convolution**, is a little bit harder than addition.
 
-- For a coefficient representation, the product C = A × B can be calculated with school-book long multiplication: 
+- For a coefficient representation, the product **C = A × B** can be calculated with school-book long multiplication:
 
-- C(x) = 􏰂 cixi 
+- $$
+  C(x)=\sum_{i=0}^{2n-2}c_ix_i
+  $$
 
-  i=0 
+  where
+  $$
+  c_i=\sum_{j=0}^ia_j\cdot b_{i-j}
+  $$
+  
+- **@To do now**: multiply $7x^2 −10x +9$ and $2x^2 +4x −5$.
 
-  i
-  \ ci =􏰂aj ·bi−j 
+- For a point-value representation, **C = A × B** is a bit easier: 
 
-  j=0
+- $$
+\{(x_0,y_0\cdot z_0),(x_1,y_1·z_1),(x_2,y_2·z_2),...,(x_{n−1},y_{n−1}·z_{n−1})\} 
+  $$
 
-- To do now: multiply 7x2 −10x +9 and 2x2 +4x −5 
+  where $x_i$ is a point, $y_i = A(x_i)$ and $z_i = B(x_i)$. 
 
-- For a point-value representation, C = A × B is a bit easier: {(x0,y0 ·z0),(x1,y1 ·z1),(x2,y2 ·z2),...,(xn−1,yn−1 ·zn−1)} 
+- The first method is $O(n^2)$, the second method is $O(n)$ !
 
-  where xi is a point, yi = A(xi) and zi = B(xi). 
-
-- 􏰀  The first method is O(n2), the second method is O(n) !
-
-- Actually, we can do a bit better than the O(n2) case using the divide and conquer method due to Karatsuba. 
+- Actually, we can do a bit better than the $O(n^2)$ case using the **divide and conquer** method due to **Karatsuba**. 
 
 - This gives an algorithm with time complexity:
 
-- $O(n^{log_23}) = O(n^{1.59})$
+- $$
+  O(n^{log_23}) = O(n^{1.59})​
+  $$
 
-- which is better than our previous method which took O(n2) operations.
+  which is better than our previous method which took $O(n^2)$ operations.
 
+- The problem is that even this is too slow ... we know that using a point-value representation is $O(n)$ ! 
 
+- So a better technique would be to traverse around this diagram: 
 
-Polynomial Multiplication 
+<img src="/Users/elvischen/Desktop/Screenshot 2019-10-23 at 08.19.03.png" alt="Screenshot 2019-10-23 at 08.19.03" style="zoom: 50%;" />
 
-- 􏰀  The problem is that even this is too slow ... we know that using a point-value representation is O(n) ! 
+- Note that the opposite of evaluation is called **interpolation**. 
 
-- 􏰀  So a better technique would be to traverse around this diagram: 
+  - So we evaluate to a *point-value representation*, multiply and then interpolate back again. 
 
-- Note that the opposite of evaluation is called interpolation. 
-
-  - 􏰀  So we evaluate to a point-value representation, multiply and then 
-
-    interpolate back again. 
-
-  - 􏰀  The question is, are we quicker than the normal multiply?
+  - The question is, are we quicker than the normal multiply?
 
 
 
 ### The Main Idea -Part 1
 
-Develop two fast algorithms that for any polynomial: 
+Develop two fast algorithms that for any polynomial:
+$$
+A(x)=\sum_{i=0}^{n-1}a_i\cdot x^i
+$$
+and a preselected set $\{x_0, x_1, . . . , x_{n−1}\}$ of numbers (to be specified before we know which polynomials we will have),
 
-and a preselected set x0, x1, . . . , xn−1 of numbers (to be specified before 
-
-we know which polynomials we will have), 
-
-- 􏰀  Evaluate A(x0), A(x1), . . . , A(xn−1) (evaluate) 
-- 􏰀  Given A(x0), A(x1), . . . , A(xn−1), reconstruct A’s coefficients a0,a1,...am−1 (interpolate) 
+- 􏰀  Evaluate $A(x_0), A(x_1) . A(x_{n−1}) $(evaluate) 
+- 􏰀  Given $A(x_0), A(x_1), . . . , A(x_{n−1})$, reconstruct A’s coefficients a0,a1,...am−1 (interpolate) 
 
 
 
 ### The Main Idea -Part 2
 
-The main steps for fast multiplication of two polynomials *A* and *B* each of degree *n* are: 
+The main steps for fast multiplication of two polynomials ***A*** and ***B*** each of degree n are: 
 
-1. *Double degree-bound:* Create coefficient representations of *A*(*x*) and *B*(*x*) as degree-bound 2*n* polynomials by adding *n* high-order zero coefficients to each.
-2. *Evaluate:* Compute point-value representations of *A*(*x*) and *B*(*x*) of length 2*n* through two applications of the FFT of order 2*n*.
-3. *Pointwise multiply:* Compute a point-value representation of *C*(*x*) = *A*(*x*)*B*(*x*) by multiplying the values pointwise
-4. *Interpolate:* Create a coefficient representation of *C*(*x*) through a single application of the *inverse* FFT. 
+1. ***Double degree-bound***
+
+   Create coefficient representations of $A(x)$ and $B(x)$ as degree-bound $2n$ polynomials by adding $n$ high-order zero coefficients to each.
+
+2. ***Evaluate***
+
+   Compute point-value representations of *A*(*x*) and *B*(*x*) of length 2*n* through two applications of the FFT of order 2*n*.
+
+3. ***Pointwise multiply***
+
+   Compute a point-value representation of $C(x) = A(x)B(x)$ by multiplying the values pointwise.
+
+4. ***Interpolate***
+
+   Create a coefficient representation of *C*(*x*) through a single application of the *inverse* FFT. 
 
 
 
@@ -190,31 +208,33 @@ The main steps for fast multiplication of two polynomials *A* and *B* each of de
 
 - First let’s address evaluation: 
 
-  - 􏰀  We need to evaluate a polynomial of degree *n* at *n* different points 
+  - We need to evaluate a polynomial of degree $n$ at $n$ different points 
 
     (ignore the degree-bound doubling for the moment). 
 
-  - 􏰀  Appears complexity of our method will be *O*(*n*2). 
+  - Appears complexity of our method will be $O(n^2)$. 
 
-  - 􏰀  Is there a faster way of doing this than just using Horner’s Rule ? 
+  - Is there a faster way of doing this than just using Horner’s Rule? 
 
-- 􏰀  Yes there is, we select the points we evaluate at to be special. 
+- Yes there is, we select the points we evaluate at to be **special**. 
 
-- 􏰀  These special points are chosen to be the *N*-th Complex Roots of Unity: 
+- These special points are chosen to be the **N-th Complex Roots of Unity**: 
 
-  - 􏰀  Thatis,thevaluesω*N* =*e*2π*ij*/*N* for*j*=0,1,...,*N*−1. 
+  - That is, the values $\omega_N =e^{2πij/N}$ for $j=0,1,...,N−1$. 
 
-  - 􏰀  Say we are evaluating at *N* points so we take the *N*-th complex roots of 
+  - Say we are evaluating at $N$ points so we take the N-th complex roots of 
 
-    unity ω*N* . 
+    unity $ω_N$. 
 
-  - 􏰀  That is, we evaluate the polynomial at the points: 
+  - That is, we evaluate the polynomial at the points: 
+  $$
+    \omega_N^0,\omega_N^1,\omega_N^2...\omega_N^{N-1}
+  $$
 
-    012 *N*−1 ω*N*,ω*N*,ω*N*,...,ω*N*.
 
-- ⚠️ 这里是逆时针的 一般网上的是顺时针的
 
-- 
+
+### Evaluation at Roots of Unity
 
 
 
@@ -222,3 +242,37 @@ The main steps for fast multiplication of two polynomials *A* and *B* each of de
 
 *The Halving Lemma:* *IfN*>0*iseventhenthesquaresoftheNcomplex N-th roots of unity are the N*/2 *complex N*/2*-th roots of unity.* 
 
+
+
+### Conclusions
+
+- We are able to multiply two polynomials of degree-bound $n$ in $O(n\ log\ n)$ operations. 
+- 􏰀  Therefore we can multiply polynomials faster than even the Karatsuba approach. 
+
+􏰀 The extra operations mean this method is only faster for reasonably large polynomials. 
+
+- 􏰀  Consider the context: 
+
+  - 􏰀  Graphics and signal processing applications use FFT a lot on very large 
+
+    data sets. 
+
+  - 􏰀  Even a small improvement in asymptotic time complexity will help 
+
+    massively when the input size is large. 
+
+  - 􏰀  FFTs can also be used for string matching problems. 
+
+- 􏰀  We’ve taken a step in the right direction using two underlying principles: 
+
+  - 􏰀  Divide and conquer is a very powerful tool. 
+  - 􏰀  A little mathematics can go a very long way. 
+
+
+
+### Further Reading 
+
+- Introduction to Algorithms
+  - Chapter 30 – Polynomials and the FFT
+- Algorithm Design
+	- Chapter 5 – Divide and Conquer 
