@@ -228,13 +228,19 @@ The main steps for fast multiplication of two polynomials ***A*** and ***B*** ea
 
   - That is, we evaluate the polynomial at the points: 
   $$
-    \omega_N^0,\omega_N^1,\omega_N^2...\omega_N^{N-1}
+  \omega_N^0,\omega_N^1,\omega_N^2...\omega_N^{N-1}
   $$
 
+- What the hell am I talking about ? Try an example:
+  - We know that $ω_N^j =e^{2πij/N}$ for $j=0,1,...,N−1$.
+  - So given the well known identity $e^{iu} = cos(u) + i\ sin(u)$, we can draw the values $ω_N^j$ .
+    An easy one to draw is for $N =8$.
+
+<img src="https://tva1.sinaimg.cn/large/006y8mN6gy1g886x8kdx7j30qo0pi3zr.jpg" style="zoom:33%;" />
 
 
 
-### Evaluation at Roots of Unity
+### Discrete Fourier Transform 
 
 
 
@@ -244,29 +250,98 @@ The main steps for fast multiplication of two polynomials ***A*** and ***B*** ea
 
 
 
+### Fast Fourier Transform
+
+
+
+### Example of Divide Step
+
+
+
+### Fast Fourier Transform
+
+
+
+### FFT - Worked Example
+
+
+
+### Fast Fourier Transform - Analysis 
+
+
+
+### Polynomial Evaluation - Summary 
+
+Remember that our aim was to evaluate two polynomials *A* and *B* of degree-bound *n* at the roots of unity. We also needed to double the degree-bound to help us perform the multiplication later on. 
+
+1. Pad the coefficient vector for *A* with zeros so that their length is 2*n* (assume *n* is a power of two). 
+
+2. Define *A*(*x*) = 􏰁2*n*−1 *a**i**x**i* (half of the coefficients are zero). *i*=0 
+
+   *j* 􏰁*n*−1 *ji* 
+
+3. Define *y**j* = *A*(ω*n*) = *i*=0 *a**i*ω*n*. 
+
+4. Then the vector *y* = (*y*0, *y*1, *y*2, . . . , *y*2*n*−1) is the 2*n*-element DFT of *A*. 
+
+5. We have our point-value representation as: 
+
+   {(ω0 ,*y* ),(ω1 ,*y* ),(ω2 ,*y* ),...,(ω2*n*−1,*y* )} 2*n* 0 2*n* 1 2*n* 2 2*n* 2*n*−1 
+
+Repeat the same process for polynomial *B*. 
+
+
+
+### Inverse Fourier Transform - Interpolation 
+
+􏰀 We will use the Inverse DFT to interpolate polynomials. This relies on a Theorem that shows how to invert the DFT: 
+
+1 *n*−1
+ *a*= 􏰂*yw*−*ji* 
+
+*i**n**jn j*=0 
+
+Although we won’t prove this here, this allows us to convert the 
+
+point-value representation of a polynomial to coefficient form. 
+
+􏰀 So if we can compute the DFT, the Inverse DFT simply does the same thing with a few amendments: 
+
+\1. Switching roles of *a* and *y* 2. Replace ω*n* by ω−1, 
+
+*n
+\* 3. Divide the final result by *n*. 
+
+􏰀 The Inverse DFT can therefore be computed in the same time complexity as the DFT. I.e. both take *O*(*n* log *n*) time. 
+
+
+
+### Polynomial Multiplication - Summary
+
+We have shown how to perform the main steps involved in polynomial multiplication 
+
+1. *Double degree-bound:* Create coefficient representations of *A*(*x*) and *B*(*x*) as degree-bound 2*n* polynomials by adding *n* high-order zero coefficients to each. *O*(*n*) time. 
+2. *Evaluate:* Compute point-value representations of *A*(*x*) and *B*(*x*) of length 2*n* through two applications of the FFT of order 2*n*. *O*(*n* log *n*) time. 
+3. *Pointwise multiply:* Compute a point-value representation of *C*(*x*) = *A*(*x*)*B*(*x*) by multiplying the values pointwise. *O*(*n*) time 
+4. *Interpolate:* Create a coefficient representation of *C*(*x*) through a single application of the *inverse* FFT. *O*(*n* log *n*) time. 
+
+Therefore the overall time complexity of polynomial multiplication is *O*(*n* log *n*). This is a lot better than the *O*(*n*2) time we started with! 
+
+
+
 ### Conclusions
 
 - We are able to multiply two polynomials of degree-bound $n$ in $O(n\ log\ n)$ operations. 
-- 􏰀  Therefore we can multiply polynomials faster than even the Karatsuba approach. 
+- Therefore we can multiply polynomials faster than even the Karatsuba approach.
+  - The extra operations mean this method is only faster for reasonably large polynomials. 
 
-􏰀 The extra operations mean this method is only faster for reasonably large polynomials. 
-
-- 􏰀  Consider the context: 
-
-  - 􏰀  Graphics and signal processing applications use FFT a lot on very large 
-
-    data sets. 
-
-  - 􏰀  Even a small improvement in asymptotic time complexity will help 
-
-    massively when the input size is large. 
-
-  - 􏰀  FFTs can also be used for string matching problems. 
-
-- 􏰀  We’ve taken a step in the right direction using two underlying principles: 
-
-  - 􏰀  Divide and conquer is a very powerful tool. 
-  - 􏰀  A little mathematics can go a very long way. 
+- Consider the context: 
+  - Graphics and signal processing applications use FFT **a lot** on very large data sets. 
+  - Even a small improvement in asymptotic time complexity will help massively when the input size is large. 
+  - FFTs can also be used for string matching problems. 
+- We’ve taken a step in the right direction using two **underlying principles**: 
+  - Divide and conquer is a very powerful tool. 
+  - A little mathematics can go a very long way. 
 
 
 
