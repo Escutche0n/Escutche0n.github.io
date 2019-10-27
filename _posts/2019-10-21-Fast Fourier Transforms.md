@@ -231,7 +231,7 @@ The main steps for fast multiplication of two polynomials ***A*** and ***B*** ea
   \omega_N^0,\omega_N^1,\omega_N^2...\omega_N^{N-1}
   $$
 
-- What the hell am I talking about ? Try an example:
+-  What the hell am I talking about ? Try an example:
   - We know that $ω_N^j =e^{2πij/N}$ for $j=0,1,...,N−1$.
   - So given the well known identity $e^{iu} = cos(u) + i\ sin(u)$, we can draw the values $ω_N^j$ .
     An easy one to draw is for $N =8$.
@@ -241,6 +241,32 @@ The main steps for fast multiplication of two polynomials ***A*** and ***B*** ea
 
 
 ### Discrete Fourier Transform 
+
+We want to evaluate a polynomial *A* at the *n* roots of unity. 
+
+- Therefore we evaluate
+
+$$
+A(x)=\sum_{j=0}^{n-1}a_j\omega_n^{kj}
+$$
+
+​         for every $k =0,1,...,n−1$. 
+
+- Let’s define the **vector of results** of these evaluations as:
+
+- $$
+  y_k=A( ω_n^k)
+  $$
+
+  
+
+- This vector $y=(y_0,...,y_{n−1})$ is the Discrete Fourier Transform (DFT) of the coefficient vector $a = (a_0, a_1, . . . , a_{n−1})$. 
+
+
+
+**Example**
+
+The discrete Fourier transform of $0+0x+x^2−x^3$ is $0,−1+i,2,−1−i$
 
 
 
