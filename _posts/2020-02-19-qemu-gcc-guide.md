@@ -1,12 +1,11 @@
 ---
 layout:     post
-title:      ARM Compiler Installation for Daniel Page's Lab
+title:      "ARM Compiler Installation for Daniel Page's Lab"
 subtitle:   "ARM开发环境配置指南"
 date:       2020-02-19
 author:     "Elvis"
 catalog: true
 comments: true
-guid: urn:uuid:bd69ccfc-e840-4bc4-99ec-54cefac7f749
 tags:
     - Linux
 	- ARM
