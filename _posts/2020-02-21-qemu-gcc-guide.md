@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "ARM Compiler Installation for Daniel Page's Lab"
+title:      ARM Compiler Installation for Daniel Page's Lab
 subtitle:   "ARM开发环境配置指南"
 date:       2020-02-21
 author:     "Elvis"
