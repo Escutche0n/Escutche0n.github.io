@@ -6,6 +6,7 @@ date:       2020-02-19
 author:     "Elvis"
 catalog: true
 comments: true
+header-img: "img/post-bg-arm.jpg"
 tags:
     - Linux
 	- ARM
