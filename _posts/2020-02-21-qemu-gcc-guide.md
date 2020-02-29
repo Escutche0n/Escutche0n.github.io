@@ -12,7 +12,6 @@ tags:
   - Linux
   - Tutorial
   - ARM
-  - Linux
 ---
 
 
