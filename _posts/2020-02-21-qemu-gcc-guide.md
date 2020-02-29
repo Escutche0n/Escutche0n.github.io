@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      ARM GCC Set-up Guide for Daniel Page's Lab
-subtitle:   "ARM开发环境配置指南"
+title:      ARM IDE Setup for Daniel Page's Lab
+subtitle:   "ARM 开发环境配置指南"
 date:       2020-02-21
 author:     "Elvis"
 catalog: true
@@ -18,9 +18,7 @@ tags:
 
 ### Install the ARM Package
 
-1. Download <a href="https://releases.linaro.org/components/toolchain/binaries/5.1-2015.08/arm-eabi/gcc-linaro-5.1-2015.08-x86_64_arm-eabi.tar.xz">**ARM GCC Compiler**</a> to your **`/Downloads`**.
-
-   
+1. Download <a href="https://releases.linaro.org/components/toolchain/binaries/5.1-2015.08/arm-eabi/gcc-linaro-5.1-2015.08-x86_64_arm-eabi.tar.xz">**ARM GCC Compiler**</a> to your **`/Downloads`**.   
 
 2. Extract the file with **`tar -zxvf ×××.tar.gz`**.
 
@@ -28,8 +26,6 @@ tags:
    ~ cd Downloads/
    tar xvzf gcc-linaro-5.1-2015.08-x86_64_arm-eabi.tar.xz 
    ```
-
-   
 
 3. Move the directory to `/opt/software` which is the target directory of labsheets' `MAKEFILE`.
 
