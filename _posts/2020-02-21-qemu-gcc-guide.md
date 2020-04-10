@@ -30,7 +30,6 @@ tags:
 3. Move the directory to `/opt/software` which is the target directory of labsheets' `MAKEFILE`.
 
    ```shell
-   ~ cd
    sudo mv -r Downloads/gcc-linaro-5.1-2015.08-x86_64_arm-eabi /opt/software/
    ```
 
